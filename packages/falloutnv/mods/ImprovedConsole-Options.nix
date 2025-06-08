@@ -1,0 +1,5 @@
+{
+  General = {
+    bConsoleScrollWheelSupport = 1;
+  };
+}

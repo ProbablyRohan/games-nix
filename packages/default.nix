@@ -9,4 +9,7 @@
   fallout2Packages = import ./fallout2/default.nix { inherit pkgs; };
   fallout2 = fallout2Packages.fallout2;
 
+  falloutNVPackages = import ./falloutnv/default.nix { inherit pkgs; };
+  falloutNV = falloutNVPackages.falloutNV;
+
 }

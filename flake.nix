@@ -1,11 +1,11 @@
 {
-  description = "Flake for home-manager module for games";
+  description = "Flake for games packaged with nix";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
   };
 
-  outputs = { self, nixpkgs }:
+  outputs = inputs@{ self, nixpkgs }:
 
   let
 
