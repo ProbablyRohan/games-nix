@@ -6,10 +6,16 @@ Packages for games on nixos
 - Hollow Knight
   - Note: Modding currently does not work as only the Humble Bundle version of the game is supported, however the code for modding is here for when GoG version support is added.
 - Fallout CE
+  - You must get the game from GoG, rename all parts of the installer to omit store unfriendly characters and add to the store
+  - Attempting to build package without the installer parts added the store correctly will show you the correct filenames
 - Fallout 2 CE
+  - You must get the game from GoG, rename all parts of the installer to omit store unfriendly characters and add to the store
+  - Attempting to build package without the installer parts added the store correctly will show you the correct filenames
   - No mods have been added as of yet but support is planned (most likely will depend on the CE project intergrating sfall features)
 - Fallout NV
-  - Default FalloutNV is based on the Viva New Vegas modding guide (not have been packaged yet).
+  - You must get the game from GoG, rename all parts of the installer to omit store unfriendly characters and add to the store
+  - Attempting to build package without the installer parts added the store correctly will show you the correct filenames
+  - Default FalloutNV package is based on the Viva New Vegas modding guide (not all mods have been packaged yet).
   - You must manually download most mods from Nexus and add them to the store just like game files.
 
 ## Usage
