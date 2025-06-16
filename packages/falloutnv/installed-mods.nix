@@ -23,6 +23,7 @@
     NoExitToMainMenu
     FogBasedObjectCulling
     zLibUpdated
+    Cell-Offset-Generator
     YUP
     YUPDate
     Unoffical-Patch-NVSE-Plus

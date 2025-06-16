@@ -273,14 +273,31 @@
         cp zlibUpdate* $out/Data/NVSE/Plugins/
       '';
     };
+    Cell-Offset-Generator = pkgs.stdenvNoCC.mkDerivation {
+      pname = "Cell-Offset-Generator";
+      version = "1.04";
+      src = pkgs.requireFile {
+        name = "Cell-Offset-Generator---NVSE-92182-1-04-1748103908.7z";
+        url = "https://www.nexusmods.com/newvegas/mods/92182";
+        sha256 = "0hp6g1wfvrq4v1yryhcd8vamyq9s8x8bx05am79pw7dy8vk0bdy4";
+      };
+      dontUnpack = true;
+      buildInputs = [ pkgs.p7zip ];
+      installPhase = ''
+        mkdir -p $out/Data/NVSE/Plugins/
+        7z x $src
+        cp nvse/plugins/* $out/Data/NVSE/Plugins/
+        cp -r menus/ $out/Data/
+      '';
+    };
     YUP = pkgs.callPackage ./YUP.nix {};
     YUPDate = pkgs.stdenvNoCC.mkDerivation {
       pname = "YUPDate";
-      version = "1.9.1";
+      version = "1.9.3";
       src = pkgs.requireFile {
-        name = "YUPDate-90824-1-9-1-1747862796.7z";
+        name = "YUPDate-90824-1-9-3-1749227719.7z";
         url = "https://www.nexusmods.com/newvegas/mods/90824";
-        sha256 = "1197hi2545bvkg1ymi7kyl9akjj4vci4vd3ymw95s4d6gvwk23cf";
+        sha256 = "1kagbf13vrw9q23ynw177kmwifb7h8q33hz5zja3w2mldqbq7kg4";
       };
       dontUnpack = true;
       buildInputs = [ pkgs.p7zip ];
