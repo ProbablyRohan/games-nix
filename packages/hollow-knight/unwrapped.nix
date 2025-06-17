@@ -1,12 +1,13 @@
-{ pkgs, hollow-knight-base, mods, modding-api, ... }:
+{ pkgs, hollow-knight-base, mods, modding-api, gog-base, ... }:
 
   pkgs.symlinkJoin {
     name = "hollow-knight-unwrapped";
     paths = [
-#   Modding on the humble bundle version (the version this is built for right now)
-#   does not work but should theoretically work if the GoG version is packaged in future
-#      modding-api
-#      mods.ExtraMenuBackgrounds
-      hollow-knight-base
+#   hollow-knight-base is the humble bundle version of the game while
+#   gog-base is the gog version of the game
+#   mods are only supported in the gog version of the game
+      modding-api
+#      hollow-knight-base
+      gog-base
     ];
   }
