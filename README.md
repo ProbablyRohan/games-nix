@@ -4,7 +4,11 @@ Packages for games on nixos
 
 ## Supported Games
 - Hollow Knight
-  - Note: Modding currently does not work as only the Humble Bundle version of the game is supported, however the code for modding is here for when GoG version support is added.
+  - Both GoG and Humble Bundle versions are supported, however you MUST get the GoG version to use mods
+  - By default GoG version of the game is expected, to use the Humble Bundle version you must override the paths of hollow-knight-unwrapped through hollow-knight:
+    ```
+    (hollow-knight.override { hollow-knight-unwrapped = hollow-knightPackages.hollow-knight-unwrapped.overrideAttrs (finalAttrs: previousAttrs: { paths = [ hollow-knightPackages.modding-api hollow-knightPackages.hollow-knight-base ]; });})
+    ```
 - Fallout CE
   - You must get the game from GoG, rename all parts of the installer to omit store unfriendly characters and add to the store
   - Attempting to build package without the installer parts added the store correctly will show you the correct filenames
