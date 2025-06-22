@@ -1,7 +1,7 @@
-{ pkgs, ... }: rec {
+{ pkgs, gogextract, ... }: rec {
 
   hollow-knight-base = pkgs.callPackage ./hollow-knight-base.nix {};
-  gog-base = pkgs.callPackage ./gog-base.nix {};
+  gog-base = pkgs.callPackage ./gog-base.nix { inherit gogextract; };
   modding-api = pkgs.callPackage ./modding-api.nix {};
   mkHollowKnightMod = pkgs.callPackage ./lib.nix {};
   mods = import ./mods.nix { inherit mkHollowKnightMod; };
