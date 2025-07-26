@@ -20,4 +20,7 @@
   baldurs-gate2Packages = import ./baldurs-gate2/default.nix { inherit pkgs gogextract; };
   baldurs-gate2 = baldurs-gate2Packages.baldurs-gate2;
 
+  eu4Packages = import ./eu4/default.nix { inherit pkgs gogextract; };
+  eu4 = eu4Packages.eu4;
+
 }

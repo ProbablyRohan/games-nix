@@ -21,6 +21,8 @@ Packages for games on nixos
   - Attempting to build package without the installer parts added the store correctly will show you the correct filenames
   - Default FalloutNV package is based on the Viva New Vegas modding guide (not all mods have been packaged yet).
   - You must manually download most mods from Nexus and add them to the store just like game files.
+- Europa Universalis IV
+  - DLC doesn't work, and no mods have been packaged.
 
 ## Usage
 The main game package is found under `packages.x86_64-linux.<game>` while other related packages (e.g. mods) are found under `packages.x86_64-linux.<game>Packages`. e.g. `packages.x86_64-linux.hollow-knight` is the main Hollow Knight package and `packages.x86_64-linux.hollow-knightPackages.modding-api` is the Hollow Knight Modding API.
