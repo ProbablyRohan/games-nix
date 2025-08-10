@@ -23,4 +23,9 @@
   eu4Packages = import ./eu4/default.nix { inherit pkgs gogextract; };
   eu4 = eu4Packages.eu4;
 
+
+# not added yet
+#  detectivebeeboPackages = import ./detectivebeebo/default.nix { inherit pkgs; };
+#  detectivebeebo = detectivebeeboPackages.detectivebeebo;
+
 }
