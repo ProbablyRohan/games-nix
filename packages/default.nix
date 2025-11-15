@@ -5,6 +5,9 @@
   hollow-knightPackages = import ./hollow-knight/default.nix { inherit pkgs gogextract; };
   hollow-knight = hollow-knightPackages.hollow-knight;
 
+  silksongPackages = import ./silksong/default.nix { inherit pkgs gogextract; };
+  silksong = silksongPackages.silksong;
+
   fallout1Packages = import ./fallout1/default.nix { inherit pkgs; };
   fallout1 = fallout1Packages.fallout1;
 
@@ -22,6 +25,8 @@
 
   eu4Packages = import ./eu4/default.nix { inherit pkgs gogextract; };
   eu4 = eu4Packages.eu4;
+  eu4-anbennar = eu4Packages.anbennar;
+  eu4-ante-bellum = eu4Packages.ante-bellum;
 
 
 # not added yet
