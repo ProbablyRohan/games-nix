@@ -27,6 +27,9 @@ Packages for games on nixos
   - All non unit/music/history lesson DLC has been packaged.
   - The Windows version of the DLC have been packaged instead of the Linux version as they are identical in content but simpler to unpack (and find)
   - Ante Bellum and Anbennar have both been packaged
+- Purrfect Apawcalypse
+  - All 3 games have been packaged
+  - You must get the games from itch.io and add the zips to the store
 
 ## Usage
 The main game package is found under `packages.x86_64-linux.<game>` while other related packages (e.g. mods) are found under `packages.x86_64-linux.<game>Packages`. e.g. `packages.x86_64-linux.hollow-knight` is the main Hollow Knight package and `packages.x86_64-linux.hollow-knightPackages.modding-api` is the Hollow Knight Modding API.

@@ -1,4 +1,4 @@
-{ pkgs, ... }: rec {
+{ pkgs, lib, ... }: rec {
 
   gogextract = pkgs.callPackage ./gogextract.nix {};
 
@@ -28,6 +28,10 @@
   eu4-anbennar = eu4Packages.anbennar;
   eu4-ante-bellum = eu4Packages.ante-bellum;
 
+  purrfect-apawcalypsePackages = import ./purrfect-apawcalypse/default.nix { inherit pkgs lib; };
+  love-at-furst-bite = purrfect-apawcalypsePackages.love-at-furst-bite;
+  purrgatory-furever = purrfect-apawcalypsePackages.purrgatory-furever;
+  patches-inferno = purrfect-apawcalypsePackages.patches-inferno;
 
 # not added yet
 #  detectivebeeboPackages = import ./detectivebeebo/default.nix { inherit pkgs; };

@@ -10,11 +10,18 @@
   let
 
     system = "x86_64-linux";
-    pkgs = import nixpkgs { inherit system; };
+    pkgs = import nixpkgs {
+      inherit system;
+      config = {
+        permittedInsecurePackages = [ "python3.12-ecdsa-0.19.1" ];
+      };
+    };
+    lib = import ./lib/default.nix { inherit pkgs; };
 
   in {
-
-    packages.x86_64-linux = import ./packages/default.nix { inherit pkgs; };
+    
+    lib = lib;
+    packages.x86_64-linux = import ./packages/default.nix { inherit pkgs lib; };
 
   };
 }
