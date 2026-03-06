@@ -5,7 +5,7 @@
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
   };
 
-  outputs = inputs@{ self, nixpkgs }:
+  outputs = inputs@{ self, nixpkgs, ... }:
 
   let
 
@@ -21,7 +21,7 @@
   in {
     
     lib = lib;
-    packages.x86_64-linux = import ./packages/default.nix { inherit pkgs lib; };
+    packages.x86_64-linux = import ./packages/default.nix { inherit pkgs lib inputs; };
 
   };
 }

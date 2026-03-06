@@ -1,4 +1,4 @@
-{ pkgs, lib, ... }: rec {
+{ pkgs, lib, inputs, ... }: rec {
 
   gogextract = pkgs.callPackage ./gogextract.nix {};
 
@@ -32,6 +32,8 @@
   love-at-furst-bite = purrfect-apawcalypsePackages.love-at-furst-bite;
   purrgatory-furever = purrfect-apawcalypsePackages.purrgatory-furever;
   patches-inferno = purrfect-apawcalypsePackages.patches-inferno;
+
+  workers-and-resourcesPackages = import ./workers-and-resources/default.nix { inherit pkgs inputs; };
 
 # not added yet
 #  detectivebeeboPackages = import ./detectivebeebo/default.nix { inherit pkgs; };
