@@ -5,8 +5,9 @@
   hollow-knightPackages = import ./hollow-knight/default.nix { inherit pkgs gogextract; };
   hollow-knight = hollow-knightPackages.hollow-knight;
 
-  silksongPackages = import ./silksong/default.nix { inherit pkgs gogextract; };
-  silksong = silksongPackages.silksong;
+# not working
+#  silksongPackages = import ./silksong/default.nix { inherit pkgs gogextract; };
+#  silksong = silksongPackages.silksong;
 
   fallout1Packages = import ./fallout1/default.nix { inherit pkgs; };
   fallout1 = fallout1Packages.fallout1;
