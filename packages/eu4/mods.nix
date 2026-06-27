@@ -5,8 +5,8 @@
     src = pkgs.fetchFromGitLab {
       owner = "anbennar";
       repo = "anbennar-eu4-dev";
-      rev = "27f3f36c277f7fd664628c2bdf1fa8e5616a015a";
-      hash = "sha256-OBCRhffYz+gmxIoiCgtZHxv7OgLSF2ub4rYkXESoTUU=";
+      rev = "50d40c103af2aa18871d27ad5b7e083a83a7fa75";
+      hash = "sha256-xxf914hZPvJvBhHktlX42BAQsmxevaAd2E/SkhJo6qM=";
     };
     mod-name = "Anbennar-PublicFork";
   };

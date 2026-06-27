@@ -1,12 +1,18 @@
-{ pkgs, fallout2-unwrapped, ... }:
+{ pkgs, fallout2-unwrapped, install-path ? "~/.local/share/fallout2/", ... }:
 
   pkgs.writeScriptBin "fallout2" ''
     #!/usr/bin/env bash
-    if [  ! -d ~/.local/share/fallout2/ ]
+    if [ ! -d ${install-path}/save ]
     then
-      mkdir -p ~/.local/share/fallout2/DATA/SAVEGAME
+      mkdir -p ${install-path}/save
     fi
-    ln -sf ${fallout2-unwrapped}/* ~/.local/share/fallout2/
-    cd ~/.local/share/fallout2/
-    exec ~/.local/share/fallout2/fallout2-ce
+    if [ ! -d ${install-path}/game ]
+    then
+      mkdir -p ${install-path}/game/DATA/
+      ln -s ${install-path}/save ${install-path}/game/DATA/SAVEGAME
+    fi
+
+    ln -sf ${fallout2-unwrapped}/* ${install-path}/game/
+    cd ${install-path}/game
+    exec ${install-path}/game/fallout2-ce
   ''

@@ -35,6 +35,7 @@
   patches-inferno = purrfect-apawcalypsePackages.patches-inferno;
 
   workers-and-resourcesPackages = import ./workers-and-resources/default.nix { inherit pkgs inputs; };
+  workers-and-resources = workers-and-resourcesPackages.workers-and-resources;
 
 # not added yet
 #  detectivebeeboPackages = import ./detectivebeebo/default.nix { inherit pkgs; };

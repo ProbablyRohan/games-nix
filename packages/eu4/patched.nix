@@ -5,8 +5,8 @@
     src = eu4-base;
     nativeBuildInputs = [ pkgs.autoPatchelfHook ];
     buildInputs = with pkgs; [
-      xorg.libSM
-      xorg.libICE
+      libsm
+      libice
       util-linux.lib
       libGLU
       gtk2

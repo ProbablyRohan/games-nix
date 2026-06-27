@@ -13,10 +13,10 @@
 
     patches = [
     # Fix case-sensitive filesystems issue when save/load games
-      (pkgs.fetchpatch2 {
-        url = "https://github.com/alexbatalov/fallout2-ce/commit/d843a662b3ceaf01ac363e9abb4bfceb8b805c36.patch";
-        sha256 = "sha256-u4E9+DE6sGYikIGwKDmSBj3ErCfIo6YzIw2eMiqXw/E=";
-      })
+    (pkgs.fetchpatch2 {
+      url = "https://github.com/alexbatalov/fallout2-ce/commit/e770e64a48cd4d0a58a07f8db72839e4747e4c1e.patch?full_index=1";
+      sha256 = "sha256-49N6uXwOBL/sE+f+W4nX6Gpwwpmbgvy38B1NjECiia0=";
+    })
     ];
 
     nativeBuildInputs = [ pkgs.cmake ];

@@ -1,5 +1,5 @@
 { pkgs, ... }: rec {
-  wine-pkg = pkgs.wineWowPackages.unstable;
+  wine-pkg = pkgs.wine;
   falloutNV-base = pkgs.callPackage ./base.nix {};
   NVSEx = pkgs.callPackage ./nvsex.nix {};
   FalloutPrefs-Options = import ./FalloutPrefs-Options.nix;
