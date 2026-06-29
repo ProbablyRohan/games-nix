@@ -15,7 +15,7 @@
   fallout2Packages = import ./fallout2/default.nix { inherit pkgs; };
   fallout2 = fallout2Packages.fallout2;
 
-  falloutNVPackages = import ./falloutnv/default.nix { inherit pkgs; };
+  falloutNVPackages = import ./falloutnv/default.nix { inherit pkgs inputs; };
   falloutNV = falloutNVPackages.falloutNV;
 
   baldurs-gate1Packages = import ./baldurs-gate1/default.nix { inherit pkgs gogextract; };

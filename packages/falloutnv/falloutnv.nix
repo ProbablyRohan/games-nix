@@ -1,4 +1,4 @@
-{ pkgs, wine-pkg, falloutNV-unwrapped, loadorder, install-path ? "$HOME/.local/share/falloutnv", ... }:
+{ pkgs, wine-pkg, falloutNV-unwrapped, loadorder, inputs, install-path ? "$HOME/.local/share/falloutnv", ... }:
 
   pkgs.writeScriptBin "falloutNV" ''
     #!/usr/bin/env bash
@@ -19,7 +19,7 @@
     then
       mkdir -p $WINEPREFIX
       DISPLAY=: WAYLAND_DISPLAY="" ${wine-pkg}/bin/wine cmd /c dir > /dev/null 2> /dev/null
-      ${wine-pkg}/bin/wine reg add "HKEY_LOCAL_MACHINE\Software\Wow6432Node\Bethesda Softworks\FalloutNV" /v "Installed Path" /t REG_SZ /d "Z:$(echo "${falloutNV-unwrapped}" | sed 's~/~\\\\~g')"
+      ${wine-pkg}/bin/wine reg add "HKEY_LOCAL_MACHINE\Software\Wow6432Node\Bethesda Softworks\FalloutNV" /v "Installed Path" /t REG_SZ /d "Z:$(echo "${falloutNV-unwrapped}/" | sed 's~/~\\\\~g')"
       ${wine-pkg}/bin/wineserver -w
 #      cp $DXVK_64/*.dll $WINEPREFIX/drive_c/windows/system32
 #      cp $DXVK_32/*.dll $WINEPREFIX/drive_c/windows/syswow64
@@ -54,5 +54,5 @@
       ln -sf ${falloutNV-unwrapped}/FalloutPrefs.ini "$WINEPREFIX/drive_c/users/$USER/Documents/My Games/FalloutNV/FalloutPrefs.ini"
     fi
     cd ${install-path}/game
-    exec ${wine-pkg}/bin/wine ${install-path}/game/FalloutNV.exe
+    exec ${inputs.nixGL.packages.x86_64-linux.nixGLDefault}/bin/nixGL ${pkgs.gamescope}/bin/gamescope -w 1920 -h 1080 -- ${wine-pkg}/bin/wine ${install-path}/game/FalloutNV.exe
   '' 

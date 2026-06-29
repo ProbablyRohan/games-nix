@@ -14,8 +14,8 @@
     iShadowFilter = 0;
     iShadowMapResolution = 256;
     iAdapter = 0;
-    "iSize W" = 1289;
-    "iSize H" = 859;
+    "iSize W" = 1920;
+    "iSize H" = 1080;
     iMultiSample = 0;
     iMaxAnisotrophy = 0;
     iPresentInterval = 1;

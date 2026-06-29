@@ -1,4 +1,4 @@
-{ pkgs, ... }: rec {
+{ pkgs, inputs, ... }: rec {
   wine-pkg = pkgs.wine;
   falloutNV-base = pkgs.callPackage ./base.nix {};
   NVSEx = pkgs.callPackage ./nvsex.nix {};
@@ -8,5 +8,5 @@
   loadorder = pkgs.callPackage ./loadorder.nix {}; 
   installed-mods = import ./installed-mods.nix { inherit pkgs mods; };
   falloutNV-unwrapped = pkgs.callPackage ./unwrapped.nix { inherit falloutNV-base FalloutPrefs NVSEx installed-mods; };
-  falloutNV = pkgs.callPackage ./falloutnv.nix { inherit wine-pkg falloutNV-unwrapped loadorder; }; 
+  falloutNV = pkgs.callPackage ./falloutnv.nix { inherit inputs wine-pkg falloutNV-unwrapped loadorder; };
 }
