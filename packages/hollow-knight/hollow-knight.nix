@@ -1,34 +1,37 @@
-{ pkgs, hollow-knight-unwrapped, ... }:
+{ pkgs, hollow-knight-unwrapped, install-path ? "~/.local/share/hollow-knight", ... }:
 
-  pkgs.buildFHSEnv {
+/*  pkgs.buildFHSEnv {
     name = "hollow-knight";
     targetPkgs = pkgs: with pkgs; [
       alsa-lib
       libGL
-      xorg.libX11
-      xorg.libXcursor
-      xorg.libXext
-      xorg.libXrender
-      xorg.libXtst
-      xorg.libXi
-      xorg.libXrandr
-      xorg.libXxf86vm
+      libx11
+      libxcursor
+      libxext
+      libxrender
+      libxtst
+      libxi
+      libxrandr
+      libxxf86vm
       libgcc
       libz
       stdenv.cc.cc.lib
       fontconfig
     ];
-    runScript = ''${pkgs.writeScript "hollow-knight-run" ''
-      if [ ! -d ~/.local/share/hollow-knight ]
+    runScript = ''${pkgs.writeScript "hollow-knight-run" ''*/
+# Updated hollow knight has the same issue as silksong and it is unclear what additional library is required - buildFHSEnv will be preferred option if worked out in the future
+    pkgs.writeScriptBin "hollow-knight" ''
+      if [ ! -d ${install-path} ]
       then
-        mkdir ~/.local/share/hollow-knight/
+        mkdir ${install-path}
       fi
-      if [ ! "$(readlink ~/.local/share/hollow-knight/Hollow Knight_Data)" = "${hollow-knight-unwrapped}/Hollow Knight_Data" ]
+      if [ ! "$(readlink ${install-path}/Hollow Knight_Data)" = "${hollow-knight-unwrapped}/Hollow Knight_Data" ]
       then
-        rm -rf ~/.local/share/hollow-knight/*
-        cp "${hollow-knight-unwrapped}/Hollow Knight" ~/.local/share/hollow-knight/
-        ln -s ${hollow-knight-unwrapped}/* ~/.local/share/hollow-knight/
+        rm -rf ${install-path}/*
+        cp "${hollow-knight-unwrapped}/Hollow Knight" ${install-path}/
+        ln -s ${hollow-knight-unwrapped}/* ${install-path}/
       fi
-      exec "~/.local/share/hollow-knight/Hollow Knight"
-    ''}'';
-  }
+      exec ${pkgs.steam-run-free}/bin/steam-run "${install-path}/Hollow Knight"
+    ''
+/*    ''}'';
+  }*/

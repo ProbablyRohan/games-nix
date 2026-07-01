@@ -54,5 +54,5 @@
       ln -sf ${falloutNV-unwrapped}/FalloutPrefs.ini "$WINEPREFIX/drive_c/users/$USER/Documents/My Games/FalloutNV/FalloutPrefs.ini"
     fi
     cd ${install-path}/game
-    exec ${inputs.nixGL.packages.x86_64-linux.nixGLDefault}/bin/nixGL ${pkgs.gamescope}/bin/gamescope -w 1920 -h 1080 -- ${wine-pkg}/bin/wine ${install-path}/game/FalloutNV.exe
+    exec ${inputs.nixGL.packages.x86_64-linux.nixGLIntel}/bin/nixGLIntel ${pkgs.gamescope}/bin/gamescope -w 1920 -h 1080 -- ${wine-pkg}/bin/wine ${install-path}/game/FalloutNV.exe
   '' 

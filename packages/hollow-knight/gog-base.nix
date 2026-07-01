@@ -3,9 +3,9 @@
   pkgs.stdenvNoCC.mkDerivation {
     name = "hollow-knight-gog-base";
     src = pkgs.requireFile {
-      name = "hollow_knight_1_5_78_11833_51218.sh";
+      name = "hollow_knight_1_5_12620_89720.sh";
       url = "https://www.gog.com/en/game/hollow_knight";
-      sha256 = "0wnsrnflkxcsvy4sygrzhkzv1fhk5bs623ib0qar2lqzvxg7485b";
+      sha256 = "1kadvhnpr5dqd2j6j0sf2p07d4vdycnpc5dw90irwkwj6dg3znvr";
     };
     buildInputs = [ pkgs.unzip gogextract ];
     dontUnpack = true;
@@ -15,9 +15,7 @@
       unzip data.zip
       cp "data/noarch/game/Hollow Knight" $out/
       cp "data/noarch/game/Hollow Knight_Data" $out/ -r
-      cp data/noarch/game/LinuxPlayer_s.debug $out/
       cp data/noarch/game/UnityPlayer.so $out/
-      cp data/noarch/game/UnityPlayer_s.debug $out/
       chmod +x "$out/Hollow Knight"
     '';
   }
