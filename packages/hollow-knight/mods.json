@@ -8,10 +8,10 @@
       {
         "Name": "Double Enemies",
         "Description": "Duplicates most enemies in the game, and shares hp between duplicate bosses.",
-        "Version": "1.0.0.0",
+        "Version": "1.2.1.1",
         "Link": {
-          "@SHA256": "771e8cb3717f69928b8dc8d62c6cea29cb7374ed7f4c101d7562aaabb092ce7d",
-          "#text": "https://github.com/Genio250/Double-Enemies/releases/download/v1.0/Double.Enemies.zip"
+          "@SHA256": "0a1f7905f94d091cfc55003de1fd0874a66ae1643ab803854602b9777edcac38",
+          "#text": "https://github.com/Genio250/Double-Enemies/releases/download/v1.2.1.1/Double.Enemies.zip"
         },
         "Dependencies": {
           "Dependency": [
@@ -597,10 +597,10 @@
       {
         "Name": "MyHK",
         "Description": "An assisting mod for HK that can improve the gaming experience significantly",
-        "Version": "1.2.0.5",
+        "Version": "1.2.0.6",
         "Link": {
-          "@SHA256": "da1385b43ccf91d50b39de34150db00418cdc4235c8c87377a72fa3bcc543580",
-          "#text": "https://github.com/QiQi7-7/MyHK/releases/download/v1.2.0.5/MyHK-v1.2.0.5.zip"
+          "@SHA256": "93d098ede5e33832a714b39c3e75b68c59ef9dbdebfd7ca5085b69d018cce7b2",
+          "#text": "https://github.com/QiQi7-7/MyHK/releases/download/v1.2.0.6/MyHK-v1.2.0.6.zip"
         },
         "Dependencies": {
           "Dependency": [
@@ -1272,6 +1272,22 @@
         }
       },
       {
+        "Name": "modthatclosesthegamewhenitopens",
+        "Description": "Mod that closes the game when it opens",
+        "Version": "1.0.0.0",
+        "Link": {
+          "@SHA256": "45966D23CE215FBEB40B0367E4E56629E2F13CFABE01870975F5BB744C36F6D2",
+          "#text": "https://github.com/TheMathGeek314/modthatclosesthegamewhenitopens/releases/download/v1.0.0.0/modthatclosesthegamewhenitopens.zip"
+        },
+        "Dependencies": {
+          "Dependency": "Satchel"
+        },
+        "Repository": "https://github.com/TheMathGeek314/modthatclosesthegamewhenitopens/",
+        "Authors": {
+          "Author": "TheMathGeek_314"
+        }
+      },
+      {
         "Name": "BrokeLocUtil",
         "Description": "A debug extension to grant unreachable rando locations",
         "Version": "1.0.0.0",
@@ -1522,10 +1538,10 @@
       {
         "Name": "AlphabetRando",
         "Description": "A Randomizer connection for the letters in the UI of the game itself",
-        "Version": "1.2.0.0",
+        "Version": "1.3.0.0",
         "Link": {
-          "@SHA256": "F5D055061038DAAA3F61200F3165ED8C5D21E5CF1FBA4A85F30362F3995FE631",
-          "#text": "https://github.com/TheMathGeek314/AlphabetRando/releases/download/v1.2.0.0/AlphabetRando.zip"
+          "@SHA256": "622E42A56BB1555B33CAB4DA974A21788BD6CCB7D2B03FB74D6343CC5BA135EC",
+          "#text": "https://github.com/TheMathGeek314/AlphabetRando/releases/download/v1.3.0.0/AlphabetRando.zip"
         },
         "Dependencies": {
           "Dependency": [
@@ -1608,10 +1624,10 @@
       {
         "Name": "Wingy",
         "Description": "Supplemental mod for the clawless bingy community",
-        "Version": "1.0.0.0",
+        "Version": "1.1.0.0",
         "Link": {
-          "@SHA256": "1EB9CBC9D980437A66FFCA278E159FB518D2C6D446CFC20AFF90ECA8C2753AE2",
-          "#text": "https://github.com/TheMathGeek314/Wingy/releases/download/v1.0.0.0/Wingy.zip"
+          "@SHA256": "2E1C478137FA9C5B56F971D4C73976E53B3AC0F7AD413DF952EDD0E5B5964714",
+          "#text": "https://github.com/TheMathGeek314/Wingy/releases/download/v1.1.0.0/Wingy.zip"
         },
         "Dependencies": {
           "Dependency": "Satchel"
@@ -2870,10 +2886,10 @@
       {
         "Name": "Breakable Wall Randomizer",
         "Description": "A Hollow Knight Randomizer add-on for breakable walls.",
-        "Version": "4.1.1.8",
+        "Version": "4.1.2.0",
         "Link": {
-          "@SHA256": "1002AF412636EFF5828EE83B03063D2686E72C7D9BBCDE812691129612E80794",
-          "#text": "https://github.com/nerthul11/BreakableWallRandomizer/releases/download/4.1.1.8/BreakableWallRandomizer.zip"
+          "@SHA256": "9A1692BAC71437775D86574C0CB16B5BFFE2B93A79B98564F443A31D7E84F502",
+          "#text": "https://github.com/nerthul11/BreakableWallRandomizer/releases/download/4.1.2.0/BreakableWallRandomizer.zip"
         },
         "Dependencies": {
           "Dependency": [
@@ -8103,10 +8119,10 @@
       {
         "Name": "LoreCore",
         "Description": "Adds a bunch of lore related Item Changer locations and items.",
-        "Version": "0.7.0.0",
+        "Version": "0.7.1.0",
         "Link": {
-          "@SHA256": "5b16a559751db99f069f1d9078488f9d6d074c543509fad5151a7be8f925f67f",
-          "#text": "https://github.com/Korzer420/LoreCore/releases/download/v0.7.0/LoreCore.zip"
+          "@SHA256": "ad6aad338ee9c3677377daf17334bf4d2a6a1457343cf97c9dde9d64ed5715e0",
+          "#text": "https://github.com/Korzer420/LoreCore/releases/download/v0.7.1/LoreCore.zip"
         },
         "Dependencies": {
           "Dependency": [
@@ -8125,10 +8141,10 @@
       {
         "Name": "Lore Randomizer",
         "Description": "Randomizer 4 connection that adds a bunch of lore related items and locations.",
-        "Version": "0.4.1.0",
+        "Version": "0.4.2.0",
         "Link": {
-          "@SHA256": "3a03a95a6d0158d42a2c17bf4a1791d45255a9fb2b40b4af96e084d11ca3e15e",
-          "#text": "https://github.com/Korzer420/LoreRandomizer/releases/download/v0.4.1/LoreRandomizer.zip"
+          "@SHA256": "219d69221dc5dd6bef72c54cbd4fcd97a9035e830db8d1e506d51606769e35e8",
+          "#text": "https://github.com/Korzer420/LoreRandomizer/releases/download/v0.4.2/LoreRandomizer.zip"
         },
         "Dependencies": {
           "Dependency": [
@@ -8256,10 +8272,10 @@
       {
         "Name": "BugPrince",
         "Description": "A Randomizer 4 connection which combines Blue Prince mechanics with Hollow Knight transition randomizer.",
-        "Version": "1.5.1.1",
+        "Version": "1.5.2.0",
         "Link": {
-          "@SHA256": "8e96b35921f859711ff523ba2d28361fd83546ee2ccdfd479fb98569ce5d6d15",
-          "#text": "https://github.com/dplochcoder/HollowKnight.BugPrince/releases/download/v1.5.1.1/BugPrince.zip"
+          "@SHA256": "43f908ee02ea6875f1635162ae9d3c733af0993e7cc14f89188f253bdad278ab",
+          "#text": "https://github.com/dplochcoder/HollowKnight.BugPrince/releases/download/v1.5.2/BugPrince.zip"
         },
         "Dependencies": {
           "Dependency": [
@@ -8338,10 +8354,10 @@
       {
         "Name": "Knight of Nights",
         "Description": "A mod for the Holloween 2025 plando, with some rando integration.",
-        "Version": "2.0.5.0",
+        "Version": "2.0.6.0",
         "Link": {
-          "@SHA256": "e8b1d8a3046eb282e48c28cc1eaf8634b3b41a2a3613fcc030bbc8df60b05dbb",
-          "#text": "https://github.com/dplochcoder/HollowKnight.KnightOfNights/releases/download/v2.0.5.0/KnightOfNights.zip"
+          "@SHA256": "84c3535e55017d9299d01e6884510572cc2a38817abcd88b981aff7c522659da",
+          "#text": "https://github.com/dplochcoder/HollowKnight.KnightOfNights/releases/download/v2.0.6.0/KnightOfNights.zip"
         },
         "Dependencies": {
           "Dependency": [
@@ -8372,10 +8388,10 @@
       {
         "Name": "MoreDoors",
         "Description": "A Rando 4 connection which adds more locked doors to Hallownest.",
-        "Version": "3.3.0.1",
+        "Version": "3.3.2.0",
         "Link": {
-          "@SHA256": "3ef9b3e18ac2a981699ef84151e50c75502da9db7802c1b1e6728d8f9c3a0c92",
-          "#text": "https://github.com/dplochcoder/HollowKnight.MoreDoors/releases/download/v3.3.0.1/MoreDoors.zip"
+          "@SHA256": "e864855a7909a0b39c1ede5b06b6f10a3ba44231ffa1b52bc1246ab77d488aac",
+          "#text": "https://github.com/dplochcoder/HollowKnight.MoreDoors/releases/download/v3.3.2.0/MoreDoors.zip"
         },
         "Dependencies": {
           "Dependency": [
@@ -8404,10 +8420,10 @@
       {
         "Name": "PurenailCore",
         "Description": "Common utilities and interop for Purenail mods",
-        "Version": "2.0.2.0",
+        "Version": "2.1.0.0",
         "Link": {
-          "@SHA256": "90afa07b95e52c7c51c23370a82eab1e4b30bfa458eecb48574eaaa92c7ef4a5",
-          "#text": "https://github.com/dplochcoder/HollowKnight.PurenailCore/releases/download/v2.0.2.0/PurenailCore.zip"
+          "@SHA256": "d6da873325ff9aca4a03cfe894d5a21ef090d60fe7cd1cc5ad71c5382a1c686d",
+          "#text": "https://github.com/dplochcoder/HollowKnight.PurenailCore/releases/download/v2.1.0.0/PurenailCore.zip"
         },
         "Dependencies": {
           "Dependency": [
@@ -8420,10 +8436,10 @@
       {
         "Name": "Scattered and Lost",
         "Description": "Celeste-themed content mod, expanding Bretta's hut",
-        "Version": "1.6.3.0",
+        "Version": "1.6.4.0",
         "Link": {
-          "@SHA256": "5f63fa44046cde0085063caaced4ac5182264fb56dd1784122b4d8c561c2701d",
-          "#text": "https://github.com/dplochcoder/HollowKnight.ScatteredAndLost/releases/download/v1.6.3.0/Scattered.and.Lost.zip"
+          "@SHA256": "e6d8b62a53126ef0ec22c1e5ba1072fddda5952e9b1764a172c21c679605b62c",
+          "#text": "https://github.com/dplochcoder/HollowKnight.ScatteredAndLost/releases/download/v1.6.4.0/Scattered.and.Lost.zip"
         },
         "Dependencies": {
           "Dependency": [
@@ -10682,6 +10698,23 @@
         }
       },
       {
+        "Name": "UndeadnameJasmine",
+        "Description": "Replaces Jasmine Vines deadname with her new name.",
+        "Version": "1.0.0.0",
+        "Link": {
+          "@SHA256": "40F04549C74AB6CE4513B2302DE74A11AFE19A5CDE76C463910D53F37EFF207C",
+          "#text": "https://github.com/peekagrub/UndeadnameJasmine/releases/download/1.0.0.0/UndeadnameJasmine.zip"
+        },
+        "Dependencies": null,
+        "Repository": "https://github.com/peekagrub/UndeadnameJasmine",
+        "Tags": {
+          "Tag": "Cosmetic"
+        },
+        "Authors": {
+          "Author": "peekagrub"
+        }
+      },
+      {
         "Name": "BossStatueFramework",
         "Description": "Library for adding custom boss statues to the Hall of Gods.",
         "Version": "1.1.0.0",
@@ -10743,10 +10776,10 @@
       {
         "Name": "ReplayLogger",
         "Description": "ReplayLoger is a mod that was created to verify the legitimacy of player challenge runs.",
-        "Version": "1.1.0.3",
+        "Version": "1.1.0.4",
         "Link": {
-          "@SHA256": "c093192544515517f6284f25ac6ab8f88df76f71fe890cdeeb8fd29a9a68d01c",
-          "#text": "https://github.com/NightFuryoOo/ReplayLogger/releases/download/v1.1.0.3/ReplayLogger.zip"
+          "@SHA256": "aca7dbc91261e0574e3a08c386cb5ff4d4b2227d4f0481a3b1f78d1b18885b0a",
+          "#text": "https://github.com/NightFuryoOo/ReplayLogger/releases/download/v1.1.0.4/ReplayLogger.zip"
         },
         "Dependencies": {
           "Dependency": "Satchel"
@@ -10789,10 +10822,10 @@
       {
         "Name": "HKBattle",
         "Description": "HKBattle is a Hollow Knight mod for solo practice and competitive boss and Pantheon challenges.",
-        "Version": "1.0.0.0",
+        "Version": "1.0.0.2",
         "Link": {
-          "@SHA256": "1ca0a6fdc111d305dfcd4f3267083f5d5e32e6d41578171de369ac1e84a9a961",
-          "#text": "https://github.com/NightFuryoOo/HKBattle/releases/download/v1.0.0.0/HKBattle.zip"
+          "@SHA256": "7c9df967d05b745b44cd8d0d610843b7eb3cf906450bc117142760502f610850",
+          "#text": "https://github.com/NightFuryoOo/HKBattle/releases/download/v1.0.0.2/HKBattle.zip"
         },
         "Dependencies": null,
         "Repository": "https://github.com/NightFuryoOo/HKBattle",
@@ -11116,14 +11149,15 @@
       {
         "Name": "Architect",
         "Description": "A Hollow Knight level editor mod, easily make and share custom levels with an in-game level editor and level sharer.",
-        "Version": "3.31.1.0",
+        "Version": "3.32.4.1",
         "Link": {
-          "@SHA256": "ab57732365f5b80a3995ba645ff3e68f7a8c95173a1dfd0a5bbf971b91dfd50e",
-          "#text": "https://github.com/cometcake575/Architect-HK/releases/download/3.31.1.0/Architect.zip"
+          "@SHA256": "cb025572b188c411efc5117dc42567d6ac7cf1e7979b4b0a5d55d5b3871ff732",
+          "#text": "https://github.com/cometcake575/Architect-HK/releases/download/3.32.4.1/Architect.zip"
         },
         "Dependencies": {
           "Dependency": [
             "Satchel",
+            "FsmMaster",
             "ItemChanger",
             "ItemCreator",
             "SFCore"
@@ -11482,10 +11516,10 @@
       {
         "Name": "Pale Court Charms",
         "Description": "Adds charms from Pale Court. Made to allow compatibility with mods that don't work with the main Pale Court. Works with Randomizer and Transcendence.\n        Do not use with Pale Court,as both mods add the same charms.",
-        "Version": "1.3.7.0",
+        "Version": "1.4.0.0",
         "Link": {
-          "@SHA256": "AB557F65CB7DAB42DEB0A30C3F05CEE99603267DD7AB1E8FA2E3A8AABC7E1608",
-          "#text": "https://github.com/Roma-337/PaleCourtCharms/releases/download/v1.3.7/PaleCourtCharms.zip"
+          "@SHA256": "3d877111f06a8febae07b72d582856b5d39234bbe2618df76f7eb9c9e770f684",
+          "#text": "https://github.com/Roma-337/PaleCourtCharms/releases/download/v1.4.0/PaleCourtCharms.zip"
         },
         "Dependencies": {
           "Dependency": [
@@ -12594,16 +12628,46 @@
         "Name": "Charm Rebalanced",
         "DisplayName": "Charm Rebalanced Mod",
         "Description": "Click [View Readme] to see all the changes. If you enjoy the mod, please consider giving the GitHub repository a star, this will help spread the mod to more people!",
-        "Version": "3.0.2.0",
+        "Version": "3.0.6.0",
         "Link": {
-          "@SHA256": "65a33ed73ab341d184101710850b72e937f2afd270bbdacf123f50d99a73516c",
-          "#text": "https://github.com/GyVn87/Charm-Rebalanced-Mod/releases/download/v3.0.2.0/CharmRebalanced.zip"
+          "@SHA256": "cd9c8b928c8dd57d8432072c6701738f9f215359eab87f41efe441d630fb22cf",
+          "#text": "https://github.com/GyVn87/Charm-Rebalanced-Mod/releases/download/v3.0.6.0/CharmRebalanced.zip"
         },
         "Dependencies": {
           "Dependency": "SFCore"
         },
         "Repository": "https://github.com/GyVn87/Charm-Rebalanced-Mod/",
         "Issues": "https://github.com/GyVn87/Charm-Rebalanced-Mod/issues",
+        "Integrations": {
+          "Integration": "Charmforging"
+        },
+        "Tags": {
+          "Tag": "Charm"
+        },
+        "Authors": {
+          "Author": "TuyenTuyenTuyen(GyVn87)"
+        }
+      },
+      {
+        "Name": "Charmforging",
+        "DisplayName": "Charmforging",
+        "Description": "Add even more interesting charms to Hollow Knight world",
+        "Version": "1.0.0.0",
+        "Link": {
+          "@SHA256": "87279485c1b904be133fdbc96b611c34627a9ddc6691bc3ea3f89568ef68c2d5",
+          "#text": "https://github.com/GyVn87/Charmforging/releases/download/v1.0.0.0/Charmforging.zip"
+        },
+        "Dependencies": {
+          "Dependency": [
+            "SFCore",
+            "ItemChanger"
+          ]
+        },
+        "Repository": "https://github.com/GyVn87/Charmforging/",
+        "Issues": "https://github.com/GyVn87/Charmforging/issues",
+        "Integrations": {
+          "Integration": "Charm Rebalanced"
+        },
         "Tags": {
           "Tag": "Charm"
         },
@@ -12758,6 +12822,93 @@
         "Issues": "https://github.com/Bluepinkdragon/HarderAPSettings/issues",
         "Authors": {
           "Author": "Bluepinkdragon"
+        }
+      },
+      {
+        "Name": "WhatTheMoth",
+        "Description": "A Simon Says-inspired Hollow Knight mod where obeying Judge Radiance sends you straight to the Radiance arena, MOD IS IN SPANISH BY THE WAY.",
+        "Version": "1.0.0.0",
+        "Link": {
+          "@SHA256": "74802B1297F9109ABCE5947ACB40EAE3F38BCECBD7E85DA1316101D396175AC8",
+          "#text": "https://github.com/iamsosigma/-WhatTheMoth-/releases/download/beta/WhatTheMoth.zip"
+        },
+        "Dependencies": null,
+        "Repository": "https://github.com/iamsosigma/-WhatTheMoth-",
+        "Issues": "https://github.com/iamsosigma/-WhatTheMoth-/issues",
+        "Authors": {
+          "Author": "PifferNL"
+        }
+      },
+      {
+        "Name": "Another Location",
+        "Description": "Adds one location to the Randomizer. Terms and Conditions may apply",
+        "Version": "1.0.0.0",
+        "Link": {
+          "@SHA256": "c0e58d784014e470fc3a93f89bfe61a2ec1ce0d85c9d2ada46f2cb68143398c2",
+          "#text": "https://github.com/Roma-337/AnotherLocation/releases/download/v1.0.0.0/AnotherLocation.zip"
+        },
+        "Dependencies": {
+          "Dependency": "Randomizer 4"
+        },
+        "Repository": "https://github.com/Roma-337/AnotherLocation",
+        "Integrations": {
+          "Integration": "RandoSettingsManager"
+        },
+        "Authors": {
+          "Author": "Roma 337"
+        }
+      },
+      {
+        "Name": "FsmMaster",
+        "Description": "Visual FSM graph inspection and live editing for PlayMaker FSMs",
+        "Version": "0.3.6.0",
+        "Link": {
+          "@SHA256": "e08b78f2a6f42d5292cdd57b6e62a0103a1ef371fa10107e33dcb6ce34de1b6c",
+          "#text": "https://github.com/ConstructiveCynicism/FsmMaster/releases/download/v0.3.6/FsmMaster-hk1578.zip"
+        },
+        "Dependencies": null,
+        "Repository": "https://github.com/ConstructiveCynicism/FsmMaster",
+        "Issues": "https://github.com/ConstructiveCynicism/FsmMaster/issues",
+        "Integrations": {
+          "Integration": "DebugMod"
+        },
+        "Authors": {
+          "Author": "ConstructiveCynicism"
+        }
+      },
+      {
+        "Name": "Shade Retreat Macro",
+        "Description": "A debug add-on that makes seeing shade retreat points easier. Function added to the Visual page",
+        "Version": "1.0.0.0",
+        "Link": {
+          "@SHA256": "3069261f290069784e5b130aa2d4b9e993aeecfd62e3a72e5a04dd3d1c82b479",
+          "#text": "https://github.com/Roma-337/ShadeRetreatMacro/releases/download/v1.0.0/ShadeRetreatMacro.zip"
+        },
+        "Dependencies": {
+          "Dependency": "DebugMod"
+        },
+        "Repository": "https://github.com/Roma-337/ShadeRetreatMacro",
+        "Authors": {
+          "Author": "Roma 337"
+        }
+      },
+      {
+        "Name": "Quick Save States",
+        "Description": "Save and instantly reload an in-game state with two customizable hotkeys",
+        "Version": "0.2.0.0",
+        "Link": {
+          "@SHA256": "0e67eada35cd14a8d5368c832020affafe020cf3c533ec156b501770e3e045e8",
+          "#text": "https://github.com/Ishmael-GameDev/QuickSaveStates/releases/download/v0.2.0/QuickSaveStates.dll"
+        },
+        "Dependencies": {
+          "Dependency": "Satchel"
+        },
+        "Repository": "https://github.com/Ishmael-GameDev/QuickSaveStates",
+        "Tags": {
+          "Tag": "Utility"
+        },
+        "Authors": {
+          "Author": "Ishmael"
         }
       }
     ]

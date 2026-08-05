@@ -1,18 +1,21 @@
-{ pkgs, fallout1-unwrapped, install-path ? "~/.local/share/fallout1/", ... }:
+{ pkgs, fallout1-unwrapped, install-path ? "~/.local/share/fallout1", ... }:
 
   pkgs.writeScriptBin "fallout1" ''
     #!/usr/bin/env bash
-    if [ ! -d ${install-path}/save ]
+    if [ ! -d ${install-path}/ ]
     then
-      mkdir -p ${install-path}/save
+      mkdir -p ${install-path}/
+      mkdir -p ${install-path}/DATA/
     fi
-    if [ ! -d ${install-path}/game ]
+    if  [ ! "$(readlink ${install-path}/fallout-ce)" = "${fallout1-unwrapped}/fallout-ce" ]
     then
-      mkdir -p ${install-path}/game/DATA/
-      ln -s ${install-path}/save ${install-path}/game/DATA/SAVEGAME
+      ln -sf ${fallout1-unwrapped}/data ${install-path}/data
+      ln -sf ${fallout1-unwrapped}/master.dat ${install-path}/master.dat
+      ln -sf ${fallout1-unwrapped}/critter.dat ${install-path}/critter.dat
+      ln -sf ${fallout1-unwrapped}/fallout-ce ${install-path}/fallout-ce
+      ln -sf ${fallout1-unwrapped}/fallout.cfg ${install-path}/fallout.cfg
+      ln -sf ${fallout1-unwrapped}/f1_res.ini ${install-path}/f1_res.ini
     fi
-
-    ln -sf ${fallout1-unwrapped}/* ${install-path}/game/
-    cd ${install-path}/game
-    exec ${install-path}/game/fallout-ce
+    cd ${install-path}/
+    exec ${install-path}/fallout-ce
   ''

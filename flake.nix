@@ -7,9 +7,13 @@
       url = "github:nix-community/nixGL";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    hjem = {
+      url = "github:feel-co/hjem";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = inputs@{ self, nixpkgs, ... }:
+  outputs = inputs@{ self, nixpkgs, nixGL, hjem, ... }:
 
   let
 
@@ -32,5 +36,6 @@
       type = "app";
       program = "${fetch-hk}/bin/fetch.nu";
     };
+    hjemModules.default = import ./modules/default.nix { inherit pkgs inputs; };
   };
 }

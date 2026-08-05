@@ -2,9 +2,9 @@
   
   love-at-furst-bite-base = lib.build-renpy-base {
     pname = "love-at-furst-bite-base";
-    name = "PurrfectApawcalypse1-LoveatFurstBite-4.09-pc";
-    url = "https://itch.io/s/58940/purrfect-apawcalypse-the-clawmplete-series";
-    sha256 = "13l5z5w8ilm2kmq7947wyf37hcxb6kgkq8yhnpccbfhw37b5lk7d";
+    name = "PurrfectApawcalypse1-LoveatFurstBite-4.10-pc";
+    url = "https://90percentstudios.itch.io/purrfect-apawcalypse-love-at-furst-bite";
+    sha256 = "12yh3g1wzfnpf74wlkig2nsp32nz6679syrv75lz97a9j9jk19iw";
   };
   love-at-furst-bite = pkgs.writeScriptBin "love-at-furst-bite" ''
     #!/usr/bin/env bash
@@ -13,9 +13,9 @@
 
   purrgatory-furever-base = lib.build-renpy-base {
     pname = "purrgatory-furever-base";
-    name = "PurrfectApawcalypse2-PurrgatoryFurever-3.47-pc";
+    name = "PurrfectApawcalypse2-PurrgatoryFurever-3.51-pc";
     url = "https://90percentstudios.itch.io/purrfect-apawcalypse-2";
-    sha256 = "1rvb87vz353sliskp19fkpszlw03ghqab0igckw7bx018v6wm7y0";
+    sha256 = "1r4a73s44z6kky40mxp99gv0k6q73hga8yhnc71gmp8nj30did67";
   };
   purrgatory-furever = pkgs.writeScriptBin "purrgatory-furever" ''
     #!/usr/bin/env bash
