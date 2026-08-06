@@ -2,17 +2,22 @@
 
   pkgs.writeScriptBin "fallout2" ''
     #!/usr/bin/env bash
-    if [ ! -d ${install-path}/save ]
+    if [ ! -d ${install-path}/ ]
     then
-      mkdir -p ${install-path}/save
+      mkdir -p ${install-path}/
+      mkdir -p ${install-path}/DATA/
     fi
-    if [ ! -d ${install-path}/game ]
+    if [ ! "$(readlink ${install-path}/fallout2-ce)" = "${fallout2-unwrapped}/fallout2-ce" ]
     then
-      mkdir -p ${install-path}/game/DATA/
-      ln -s ${install-path}/save ${install-path}/game/DATA/SAVEGAME
+      ln -sf ${fallout2-unwrapped}/data ${install-path}/data
+      ln -sf ${fallout2-unwrapped}/master.dat ${install-path}/master.dat
+      ln -sf ${fallout2-unwrapped}/critter.dat ${install-path}/critter.dat
+      ln -sf ${fallout2-unwrapped}/patch000.dat ${install-path}/patch000.dat
+      ln -sf ${fallout2-unwrapped}/fallout2-ce ${install-path}/fallout2-ce
+      ln -sf ${fallout2-unwrapped}/fallout2.cfg ${install-path}/fallout2.cfg
+      ln -sf ${fallout2-unwrapped}/f2_res.ini ${install-path}/f2_res.ini
+      ln -sf ${fallout2-unwrapped}/ddraw.ini ${install-path}/ddraw.ini
     fi
-
-    ln -sf ${fallout2-unwrapped}/* ${install-path}/game/
     cd ${install-path}/game
     exec ${install-path}/game/fallout2-ce
   ''
