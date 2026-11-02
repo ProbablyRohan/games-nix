@@ -57,6 +57,9 @@ in {
     ./purrfect-apawcalypse.nix
     ./fallout1.nix
     ./fallout2.nix
+# Both not finished
+#    ./falloutnv.nix
+#    ./eu4.nix
   ];
   _module.args.mkIfElse = mkIfElse;
   _module.args.mkPackageOption = mkPackageOption;
