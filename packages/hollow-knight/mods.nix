@@ -1,5 +1,61 @@
 { mkHollowKnightMod, ... }: rec {
 
+core-GMIC = mkHollowKnightMod {
+    pname = "core.GMIC";
+    version = "0.1.0.0";
+    url = "https://github.com/Pikatyu8/core.G-MIC/releases/download/v0.1.0/core.GMIC.dll";
+    sha256 = "c876ccb9c4cede827ed53d9b590f035811b6e1525873e1ef1514365713f4efdb";
+    dependencies = [ Satchel ];
+  };
+NightmareAccess = mkHollowKnightMod {
+    pname = "NightmareAccess";
+    version = "1.1.0.6";
+    url = "https://github.com/Pikatyu8/NightmareAccess/releases/download/v1.1.0.6/NightmareAccess.dll";
+    sha256 = "0a5d5e9d1d5fbbfa446ed04aeda8cc4fe6cc64ba35bc2441581927c4082eba04";
+    dependencies = [ ItemChanger MenuChanger Randomizer-4 Satchel  ];
+  };
+ItemReveal = mkHollowKnightMod {
+    pname = "ItemReveal";
+    version = "0.1.0.0";
+    url = "https://github.com/jwwood3/ItemReveal/releases/download/v0.1.0.0/ItemReveal.zip";
+    sha256 = "8b2aed1c694fd14cce7c1737ad30c97f8003751db9e788db7714cb1c78ac4b2b";
+    dependencies = [ Randomizer-4 RandomizerCore ItemChanger MenuChanger MapChanger RandoMapMod RandoMapCore RandoSettingsManager  ];
+  };
+SuperUltrawideHUD = mkHollowKnightMod {
+    pname = "SuperUltrawideHUD";
+    version = "1.0.1.0";
+    url = "https://github.com/jinxcase000/SuperUltrawideHUD/releases/download/v1.0.1.0/SuperUltrawideHUD.zip";
+    sha256 = "29E56AB609397FED8BC50C24D5ACCDDC877D8506DD13116B7C5A5C67DC048CDF";
+    dependencies = [ WideCamera ];
+  };
+BadApple = mkHollowKnightMod {
+    pname = "BadApple";
+    version = "1.0.0.0";
+    url = "https://github.com/Dreamy-Catty/HollowKnight.BadApple/releases/download/v1.0.0.0/BadApple.zip";
+    sha256 = "c6d0328d8ce100a6e3b0420766b6dafc80d6cfd74fc50532defff810c7bc6a3f";
+    dependencies = [  ];
+  };
+TerrariaArsenal = mkHollowKnightMod {
+    pname = "TerrariaArsenal";
+    version = "1.0.2.0";
+    url = "https://raw.githubusercontent.com/Kaenari/Hollow-Knight-But-Terraria-Wanted-Me-to-Play-It-So-It-Took-My-Game-and-Forced-Me-to-Play-It/afd0095fa9b1ea9be48a5a09cbde15181d193def/release/TerrariaArsenal_1.0.2.0.zip";
+    sha256 = "C5CEAB8462FC32F2F5B38D18A4DE2C2C90B4CED73094381A94E034BB0B5C204D";
+    dependencies = [  ];
+  };
+BetterParrying = mkHollowKnightMod {
+    pname = "BetterParrying";
+    version = "1.0.0.0";
+    url = "https://github.com/user500050/HKBetterParrying/releases/download/v.1.0.0/BetterParrying.zip";
+    sha256 = "535F917D2FAFF5DAFD81ABED23857A95761C143BC465722974623453759BF6C8";
+    dependencies = [  ];
+  };
+MidAirHealing = mkHollowKnightMod {
+    pname = "MidAirHealing";
+    version = "1.1.0.0";
+    url = "https://github.com/user500050/HKMidAirHealing/releases/download/v.1.1.0/MidAirHealing.zip";
+    sha256 = "8BE1DFDA204CCA1DECA0A12943A4623221077B62EE57F01CB789E16AFD596A0D";
+    dependencies = [  ];
+  };
 Input-Display = mkHollowKnightMod {
     pname = "Input Display";
     version = "1.0.0.0";
@@ -135,9 +191,9 @@ DeVect = mkHollowKnightMod {
   };
 ReplayTimerMod = mkHollowKnightMod {
     pname = "ReplayTimerMod";
-    version = "0.4.0.0";
-    url = "https://github.com/AdiPrk/ReplayTimerMod/releases/download/v0.4.0/ReplayModHK1578.zip";
-    sha256 = "7b7087843d9cd2ecadf9aa07bbfdeb66531a6dd471ec8693a9228dc5cda30f0f";
+    version = "0.1.0.0";
+    url = "https://github.com/AdiPrk/ReplayTimerMod/releases/download/v1.0.0/ReplayModHK1578.zip";
+    sha256 = "3b7eb65dc58cecc5f4906109100f1aaa26c84b81f356f61608b5f0ebc4d8bb8e";
     dependencies = [  ];
   };
 StubbornKnight = mkHollowKnightMod {
@@ -171,7 +227,7 @@ EasierGeoEconomy = mkHollowKnightMod {
 PantheonArchitect = mkHollowKnightMod {
     pname = "PantheonArchitect";
     version = "1.0.0.4";
-    url = "https://github.com/ultranumbzz/pantheon-architect/releases/download/1.0.0.4/PantheonArchitect.zip";
+    url = "https://codeberg.org/PantheonArchitect/PantheonArchitect/releases/download/1.0.0.4/PantheonArchitect.zip";
     sha256 = "e7d10561faef728dd1798a2a692ef30adfc525b4548b81c6b57538dfc62b1fd8";
     dependencies = [  ];
   };
@@ -275,9 +331,9 @@ SkinBenchRoulette = mkHollowKnightMod {
   };
 Wrong-Gravity = mkHollowKnightMod {
     pname = "Wrong Gravity";
-    version = "1.0.0.0";
-    url = "https://github.com/FrogBishop/HollowKnight.WrongGravity/releases/download/1.0.0.0/WrongGravity.zip";
-    sha256 = "A95BCAE12E8DD96EEA1D1107A3CB71D3090525CE864BFBF6E34E3BCB542D5137";
+    version = "1.0.0.9";
+    url = "https://github.com/FrogBishop/HollowKnight.WrongGravity/releases/download/1.0.0.9/WrongGravity.zip";
+    sha256 = "C4B5C4A4C468288229855806567C5CD10F3DFBE6420A0BE7E371B86C944BA616";
     dependencies = [ Vasi ];
   };
 Uumuu-Hack = mkHollowKnightMod {
@@ -380,9 +436,9 @@ Castless-Focus = mkHollowKnightMod {
   };
 BingoBoardReplay = mkHollowKnightMod {
     pname = "BingoBoardReplay";
-    version = "1.3.4.4";
-    url = "https://github.com/TheRealAlph4/HollowKnight.BingoBoardReplay/releases/download/v1.3.4.4/BingoBoardReplay.zip";
-    sha256 = "BC9794AB1F0317CED53436CAA18C035A83AD9ACB5A0F6117753DC684CF58E213";
+    version = "1.4.0.1";
+    url = "https://github.com/TheRealAlph4/HollowKnight.BingoBoardReplay/releases/download/v1.4.0.1/BingoBoardReplay.zip";
+    sha256 = "FF688CF519AB5C6179EB9B5D7F138D559273AB2963BCDE67DB871EB66FF07329";
     dependencies = [ BingoSync ];
   };
 ModCommon = mkHollowKnightMod {
@@ -398,6 +454,20 @@ GrubDay2026Plando = mkHollowKnightMod {
     url = "https://github.com/Pengwizard/GrubDay2026Plando/releases/download/v1.0.0/GrubDay2026Plando.zip";
     sha256 = "7590cab869a1a9298731e09d9d1bc2c48392d64f71cc641876881c86bb350486";
     dependencies = [ ItemChanger Satchel ArchitectLegacy PurenailCore Benchwarp BenchWarpFix BingoUI DeathCounter Randomizer-4 QoL RandoMapMod RandoSettingsManager ItemChangerDataLoader ItemSync RandoStats RecentItemsDisplay HKTool Scatternest  ];
+  };
+Spell-Staller-Charms = mkHollowKnightMod {
+    pname = "Spell Staller Charms";
+    version = "1.1.0.0";
+    url = "https://github.com/Pengwizard/SpellStaller/releases/download/v1.1/SpellStaller.zip";
+    sha256 = "b248c67953b84dce975c28c8c61e96f3ca39e66c76e3b15862635313dce2c639";
+    dependencies = [ MenuChanger ItemChanger KorzUtils SFCore Vasi Randomizer-4 RandomizerCore RandomizerCore-Json RandoSettingsManager DebugMod  ];
+  };
+Midautumn's-Knightmare = mkHollowKnightMod {
+    pname = "Midautumn's Knightmare";
+    version = "1.0.0.0";
+    url = "https://github.com/Pengwizard/CorruptedDreamsPlando/releases/download/v1.3/CorruptedDreamsPlando.zip";
+    sha256 = "b8a9f7b917a52a98c721e1e57543e6e6f4ff70cfceff111b3c73c3e63ecc8bc8";
+    dependencies = [ MoreDoors Randomizer-4 ItemChangerDataLoader ItemChanger RandomizerCore RandomizerCore-Json RandoSettingsManager MenuChanger SFCore Satchel KorzUtils MapChanger PurenailCore AccessRandomizer CustomPoolInjector DebugMod ICExtraDeployers ItemSync QoL Randomizable-Levers RandoPlus RecentItemsDisplay TheGloryOfBeingAFoolRandomizer Spell-Staller-Charms Scatternest Extra-Rando BingoUI Benchwarp FStats Rope-Rando FrogCore RandoStats HKTool WavLib RandoMapMod  ];
   };
 PedroSoulOrb = mkHollowKnightMod {
     pname = "PedroSoulOrb";
@@ -429,10 +499,24 @@ LoadRandomizer = mkHollowKnightMod {
   };
 BingoGoalPackSpleengy = mkHollowKnightMod {
     pname = "BingoGoalPackSpleengy";
-    version = "1.0.0.0";
-    url = "https://github.com/notahumanhand/BingoGoalPackSpleengy/releases/download/1.0/BingoGoalPackSpleengy.zip";
-    sha256 = "1ba9f902ce26971bdd23b73eb4cc5397a2c6d02952d063bf3ac411fdfaf13589";
+    version = "1.1.0.0";
+    url = "https://github.com/TheRealAlph4/HollowKnight.BingoGoalPackSpleengy/releases/download/v1.1/BingoGoalPackSpleengy.zip";
+    sha256 = "A4F39234182DEA5DAEC68352C4F93853A075D13B542D7E8FF60500992F35AFA3";
     dependencies = [ BingoAdvancedCustomGeneration BingoSync BingoGoalPack1  ];
+  };
+Isma's-Embrace = mkHollowKnightMod {
+    pname = "Isma's Embrace";
+    version = "1.0.1.0";
+    url = "https://github.com/TheMathGeek314/IsmasEmbrace/releases/download/v1.0.1.0/IsmasEmbrace.zip";
+    sha256 = "4BFCDFDA0F5388F091C591ACB503A7BA14B2936B7F5DBD250BD70D0368629072";
+    dependencies = [ HKTool ItemChanger MenuChanger Randomizer-4 RandomizerCore RandomizerCore-Json  ];
+  };
+GhostPlando = mkHollowKnightMod {
+    pname = "GhostPlando";
+    version = "1.0.0.1";
+    url = "https://github.com/TheMathGeek314/GhostPlando/releases/download/v1.0.0.1/GhostPlando.zip";
+    sha256 = "FC2C3C526C09E2C7F1F79F2A0BDBB648640A8A7F22DEC6D548BC5762C077144A";
+    dependencies = [ AccessRandomizer HKTool ItemChanger ItemChangerDataLoader LoreCore Lore-Randomizer MenuChanger MoreDoors Randomizer-4 RandomizerCore WavLib  ];
   };
 GeoOverHud = mkHollowKnightMod {
     pname = "GeoOverHud";
@@ -443,9 +527,9 @@ GeoOverHud = mkHollowKnightMod {
   };
 LegacyRando = mkHollowKnightMod {
     pname = "LegacyRando";
-    version = "1.0.0.0";
-    url = "https://github.com/TheMathGeek314/LegacyRando/releases/download/v1.0.0.0/LegacyRando.zip";
-    sha256 = "D45FCD1D31A6F060BEFD30D15B54326EFDA40F59E6F6E89B770A0E3C41DA956A";
+    version = "1.0.1.0";
+    url = "https://github.com/TheMathGeek314/LegacyRando/releases/download/v1.0.1.0/LegacyRando.zip";
+    sha256 = "8A59265DDA829021F25931B1A586042DE376FB8F13E4DBAA73B4A6187B27FDB8";
     dependencies = [ ItemChanger MenuChanger Randomizer-4 RandomizerCore RandomizerCore-Json  ];
   };
 modthatclosesthegamewhenitopens = mkHollowKnightMod {
@@ -478,9 +562,9 @@ NotBackgroundObjectRando = mkHollowKnightMod {
   };
 EverySceneUtil = mkHollowKnightMod {
     pname = "EverySceneUtil";
-    version = "1.2.0.0";
-    url = "https://github.com/TheMathGeek314/EverySceneUtil/releases/download/v1.2.0.0/EverySceneUtil.zip";
-    sha256 = "FB530E8CB9680258D87D24C3B41E75D9B47344BE70D382FEBFAF2D56C9F830A2";
+    version = "1.3.0.0";
+    url = "https://github.com/TheMathGeek314/EverySceneUtil/releases/download/v1.3.0.0/EverySceneUtil.zip";
+    sha256 = "8C4010DC8142A8B2C4187B2ADDD593EC3DF3EF639F25426F6501F0B7F456D531";
     dependencies = [  ];
   };
 RegretRecoveryRestoration = mkHollowKnightMod {
@@ -492,9 +576,9 @@ RegretRecoveryRestoration = mkHollowKnightMod {
   };
 TheRealTransitionRando = mkHollowKnightMod {
     pname = "TheRealTransitionRando";
-    version = "1.1.1.0";
-    url = "https://github.com/TheMathGeek314/TheRealTransitionRando/releases/download/v1.1.1.0/TheRealTransitionRando.zip";
-    sha256 = "33921757FE6EF549E007C722E26F8DFC5AE958FACBF4A30000886A5A69DA3F08";
+    version = "1.1.2.0";
+    url = "https://github.com/TheMathGeek314/TheRealTransitionRando/releases/download/v1.1.2.0/TheRealTransitionRando.zip";
+    sha256 = "CEC45DABFB1D24F0C9291EDEDEAA18284CDE307F8CA41D3D98BE431563943C34";
     dependencies = [ ItemChanger MenuChanger Randomizer-4 RandomizerCore RandomizerCore-Json  ];
   };
 CorpseDreamRando = mkHollowKnightMod {
@@ -513,9 +597,9 @@ NetworkingPlando = mkHollowKnightMod {
   };
 MoreStags = mkHollowKnightMod {
     pname = "MoreStags";
-    version = "1.1.2.2";
-    url = "https://github.com/TheMathGeek314/MoreStags/releases/download/v1.1.2.2/MoreStags.zip";
-    sha256 = "B02AC56A41C66EB586015B01E7FDA50C55DECF14A709A327FC4356D476C3F753";
+    version = "1.1.2.8";
+    url = "https://github.com/TheMathGeek314/MoreStags/releases/download/v1.1.2.8/MoreStags.zip";
+    sha256 = "CAF0BE52A21F315093E0F54721AF116095601A451BC197AEAC307041FB6C801B";
     dependencies = [ AlreadyEnoughPlayMaker ItemChanger MenuChanger Randomizer-4 RandomizerCore RandomizerCore-Json Satchel  ];
   };
 AlphabetRando = mkHollowKnightMod {
@@ -541,9 +625,9 @@ RecentItemsDisplayNoGeo = mkHollowKnightMod {
   };
 GeoRando = mkHollowKnightMod {
     pname = "GeoRando";
-    version = "1.0.3.0";
-    url = "https://github.com/TheMathGeek314/GeoRando/releases/download/v1.0.3.0/GeoRando.zip";
-    sha256 = "2AE032A1E76116D3AC158F973B15AEA36E28A3BBA5DCF6CA9F774BC482537275";
+    version = "1.0.3.1";
+    url = "https://github.com/TheMathGeek314/GeoRando/releases/download/v1.0.3.1/GeoRando.zip";
+    sha256 = "320C1BEDBF6D75983A90A30229A457BBD73D97F85DF25EE5BDDA5F795FE54360";
     dependencies = [ ItemChanger MenuChanger Randomizer-4 RandomizerCore RandomizerCore-Json  ];
   };
 Wingy = mkHollowKnightMod {
@@ -583,9 +667,9 @@ SkillCharms = mkHollowKnightMod {
   };
 VendorRando = mkHollowKnightMod {
     pname = "VendorRando";
-    version = "1.1.4.1";
-    url = "https://github.com/TheMathGeek314/VendorRando/releases/download/v1.1.4.1/VendorRando.zip";
-    sha256 = "0571BB841DC5D84F8D2E542C6F1DBEEB81B308A0BE4A06F6DBD7D41BDF2B055B";
+    version = "1.1.5.0";
+    url = "https://github.com/TheMathGeek314/VendorRando/releases/download/v1.1.5.0/VendorRando.zip";
+    sha256 = "9397C0FEF8F4489E69E243833C35102C0ACAC4A6853547D2E5F18CE9482E49D1";
     dependencies = [ ItemChanger MenuChanger Randomizer-4 RandomizerCore RandomizerCore-Json Satchel  ];
   };
 RainbowFlukes = mkHollowKnightMod {
@@ -625,9 +709,9 @@ DebugCharms = mkHollowKnightMod {
   };
 ShuffledCharmEffects = mkHollowKnightMod {
     pname = "ShuffledCharmEffects";
-    version = "1.1.0.0";
-    url = "https://github.com/TheMathGeek314/ShuffledCharmEffects/releases/download/v1.1.0.0/ShuffledCharmEffects.zip";
-    sha256 = "F9BFB81724F5BC48E2BA705D24B7BAC9D34B0B6144D16C2734F94358F80F9805";
+    version = "1.1.0.1";
+    url = "https://github.com/TheMathGeek314/ShuffledCharmEffects/releases/download/v1.1.0.1/ShuffledCharmEffects.zip";
+    sha256 = "8BEC028DA2AA6C1D49A1494CA1359554A9A80253AE3D289C0DDC327D88A2ADEC";
     dependencies = [ Satchel ];
   };
 Flukemaster = mkHollowKnightMod {
@@ -730,9 +814,9 @@ AlwaysWorldSense = mkHollowKnightMod {
   };
 BingoGoalPack2 = mkHollowKnightMod {
     pname = "BingoGoalPack2";
-    version = "1.1.0.0";
-    url = "https://github.com/TheMathGeek314/BingoGoalPack2/releases/download/v1.1.0.0/BingoGoalPack2.zip";
-    sha256 = "1761076D667D9A4128ABF9DDB5EAC8BA90D4F3B763D4748C828E2AA0A5D573B8";
+    version = "1.2.0.0";
+    url = "https://github.com/TheMathGeek314/BingoGoalPack2/releases/download/v1.2.0.0/BingoGoalPack2.zip";
+    sha256 = "5886A4CEF9926DC683FEC4BB9A18B912C92714A29F55AEE63E9A84E3CA6CF38C";
     dependencies = [ BingoSync ];
   };
 KeybindOverhaul = mkHollowKnightMod {
@@ -849,9 +933,9 @@ Elderbugnest = mkHollowKnightMod {
   };
 BingoGoalPack1 = mkHollowKnightMod {
     pname = "BingoGoalPack1";
-    version = "1.6.0.0";
-    url = "https://github.com/TheMathGeek314/BingoGoalPack1/releases/download/v1.6.0.0/BingoGoalPack1.zip";
-    sha256 = "AD7131E1F7FBB8DFF4583ECD09AF880EF3B673B0E16EDA778015D66227A58AC3";
+    version = "1.7.0.0";
+    url = "https://github.com/TheMathGeek314/BingoGoalPack1/releases/download/v1.7.0.0/BingoGoalPack1.zip";
+    sha256 = "9FF7EC88396B5CC2DE4BF6AD1843FD7724F21373BE8C2DBB732E24FCC7BEFE34";
     dependencies = [ BingoSync Satchel  ];
   };
 BingoSyncExtension = mkHollowKnightMod {
@@ -1192,9 +1276,9 @@ BenchwarpSpoilerCloak = mkHollowKnightMod {
   };
 QoL = mkHollowKnightMod {
     pname = "QoL";
-    version = "4.9.0.0";
-    url = "https://github.com/fifty-six/HollowKnight.QoL/releases/download/v4.9/QoL.zip";
-    sha256 = "AE6DDF273249ED7EF75E26A5257CC2D7DE3F790230B1EAA8A57677161A65F0AC";
+    version = "4.10.0.0";
+    url = "https://github.com/fifty-six/HollowKnight.QoL/releases/download/v4.10/QoL.zip";
+    sha256 = "B0145B8484A5A3FC462CD93E5D4DD36A3D975AA1F7814828DE4387028225F908";
     dependencies = [ Vasi ];
   };
 ScreenshotMachine = mkHollowKnightMod {
@@ -2945,7 +3029,7 @@ PathOfPureVessel = mkHollowKnightMod {
     version = "1.0.0.0";
     url = "https://github.com/ygsbzr/PathOfPureVessel/releases/download/v1.0/PathOfPureVessel.zip";
     sha256 = "cea7e40543cb5dc9fdb42bddb6f908d6ddafc751192b4a1facf79b476c63fdc7";
-    dependencies = [ Satchel ];
+    dependencies = [ HKTool Satchel  ];
   };
 Fennel = mkHollowKnightMod {
     pname = "Fennel";
@@ -3103,16 +3187,16 @@ Infection-Bomb = mkHollowKnightMod {
   };
 BugPrince = mkHollowKnightMod {
     pname = "BugPrince";
-    version = "1.5.3.0";
-    url = "https://github.com/dplochcoder/HollowKnight.BugPrince/releases/download/v1.5.3.0/BugPrince.zip";
-    sha256 = "a7ca29532294cd054a91908c657a0e8826fbc0ff915ccf5e9c853768d15e1906";
+    version = "1.5.4.0";
+    url = "https://github.com/dplochcoder/HollowKnight.BugPrince/releases/download/v1.5.4.0/BugPrince.zip";
+    sha256 = "6dbce68f1d5742ad5bb5356051104f94215167ba0bb5ad85b15c00dfdc598998";
     dependencies = [ Benchwarp ItemChanger MenuChanger PurenailCore RandomizerCore Randomizer-4 SFCore  ];
   };
 DarknessRandomizer = mkHollowKnightMod {
     pname = "DarknessRandomizer";
-    version = "1.5.2.0";
-    url = "https://github.com/dplochcoder/HollowKnight.DarknessRandomizer/releases/download/v1.5.2.0/DarknessRandomizer.zip";
-    sha256 = "cb39db950dfb7760511cf88a9c06fa2329e43339e18353656ca37e308c7f4c5a";
+    version = "1.5.3.0";
+    url = "https://github.com/dplochcoder/HollowKnight.DarknessRandomizer/releases/download/v1.5.3.0/DarknessRandomizer.zip";
+    sha256 = "9267b012230b3c59f8a7c2432cdcecad73c6391afe9ea0bc154fe25055a6b758";
     dependencies = [ ItemChanger MenuChanger PurenailCore Randomizer-4 SFCore  ];
   };
 Mimicpocalypse = mkHollowKnightMod {
@@ -3124,30 +3208,30 @@ Mimicpocalypse = mkHollowKnightMod {
   };
 Knight-of-Nights = mkHollowKnightMod {
     pname = "Knight of Nights";
-    version = "2.0.8.0";
-    url = "https://github.com/dplochcoder/HollowKnight.KnightOfNights/releases/download/v2.0.8.0/KnightOfNights.zip";
-    sha256 = "f746e29206287d06f39b42f2bb4c29f2721e698d8c69285f36491967c61dfeeb";
+    version = "2.0.10.0";
+    url = "https://github.com/dplochcoder/HollowKnight.KnightOfNights/releases/download/v2.0.10.0/Knight.of.Nights.zip";
+    sha256 = "90d4d2f02513d88d9f06151dbd9a59c2f9156c5cb615634acf1314690cd7000a";
     dependencies = [ Benchwarp ItemChanger MenuChanger PurenailCore Randomizer-4 RandoPlus Satchel SFCore  ];
   };
 MoreDoors = mkHollowKnightMod {
     pname = "MoreDoors";
-    version = "3.4.2.0";
-    url = "https://github.com/dplochcoder/HollowKnight.MoreDoors/releases/download/v3.4.2.0/MoreDoors.zip";
-    sha256 = "26d3d861b39d04bdb5e324a5859cc82f0d6c41522e85d762ad0c844117f17a0e";
+    version = "3.4.3.0";
+    url = "https://github.com/dplochcoder/HollowKnight.MoreDoors/releases/download/v3.4.3.0/MoreDoors.zip";
+    sha256 = "66d19cb7002b500a47012f00f79efb35545dc21e797cc5712ef3cb6f7838b3ee";
     dependencies = [ ItemChanger MenuChanger PurenailCore Randomizer-4 SFCore  ];
   };
 PurenailCore = mkHollowKnightMod {
     pname = "PurenailCore";
-    version = "2.1.1.0";
-    url = "https://github.com/dplochcoder/HollowKnight.PurenailCore/releases/download/v2.1.1.0/PurenailCore.zip";
-    sha256 = "631dcebd371253e83cebd0b41e90ca596fad523625e5b98ac66a39ffb0d842fe";
+    version = "2.2.1.0";
+    url = "https://github.com/dplochcoder/HollowKnight.PurenailCore/releases/download/v2.2.1.0/PurenailCore.zip";
+    sha256 = "ebe50b2a3f77328af686509822bd002729c9df80cab9f2404bdaadf5c0947831";
     dependencies = [ RandomizerCore-Json Randomizer-4  ];
   };
 Scattered-and-Lost = mkHollowKnightMod {
     pname = "Scattered and Lost";
-    version = "1.6.6.0";
-    url = "https://github.com/dplochcoder/HollowKnight.ScatteredAndLost/releases/download/v1.6.6.0/Scattered.and.Lost.zip";
-    sha256 = "792f81e27d30f74df5cb87ee8b59e09fb5bff20dc97251a054588f1e3f210a78";
+    version = "1.6.7.0";
+    url = "https://github.com/dplochcoder/HollowKnight.ScatteredAndLost/releases/download/v1.6.7.0/Scattered.and.Lost.zip";
+    sha256 = "36e135b964f11f429933fdf5838bb994c1688de3524da338e9330d88d5a2ec45";
     dependencies = [ ItemChanger MenuChanger MoreDoors PurenailCore RandomizerCore-Json SFCore  ];
   };
 Sein = mkHollowKnightMod {
@@ -3166,16 +3250,16 @@ SpicyRando = mkHollowKnightMod {
   };
 SpoilerViewerMod = mkHollowKnightMod {
     pname = "SpoilerViewerMod";
-    version = "2.13.0.0";
-    url = "https://github.com/dplochcoder/hkspoilerviewer/releases/download/v2.13.0/SpoilerViewerMod.zip";
-    sha256 = "5b1e276ed3affd88126f4847a96ea81359179252f586a1174cfd5dee949c2e8c";
+    version = "2.13.1.0";
+    url = "https://github.com/dplochcoder/hkspoilerviewer/releases/download/v2.13.1.0/SpoilerViewerMod.zip";
+    sha256 = "a6d987c43f9ccfcd1ee8dbac4123d79fa18981d24619d5e19dfd1e973a7c0adc";
     dependencies = [ ItemChanger MenuChanger Randomizer-4  ];
   };
 TreasureHunt = mkHollowKnightMod {
     pname = "TreasureHunt";
-    version = "1.7.3.0";
-    url = "https://github.com/dplochcoder/HollowKnight.TreasureHunt/releases/download/v1.7.3.0/TreasureHunt.zip";
-    sha256 = "4015ee3c26d8f9c459a0dac078b9f4cede7542a89c6c6906b7eedc8ee7e2fc63";
+    version = "1.7.4.0";
+    url = "https://github.com/dplochcoder/HollowKnight.TreasureHunt/releases/download/v1.7.4.0/TreasureHunt.zip";
+    sha256 = "3249585cfa8b56716b29d4303b9345ff4fcb688260687cf5a27ebc6f8415269d";
     dependencies = [ ConnectionMetadataInjector ItemChanger MagicUI MenuChanger PurenailCore Randomizer-4 SFCore  ];
   };
 UnRando = mkHollowKnightMod {
@@ -3187,16 +3271,16 @@ UnRando = mkHollowKnightMod {
   };
 MapChanger = mkHollowKnightMod {
     pname = "MapChanger";
-    version = "1.3.11.0";
-    url = "https://github.com/syyePhenomenol/MapChanger/releases/download/v1.3.11/MapChanger.zip";
-    sha256 = "0EC9097AE010CCBC68304BD337F133099DB79DA4BE58737B863E488726C0911D";
+    version = "1.3.12.0";
+    url = "https://github.com/syyePhenomenol/MapChanger/releases/download/v1.3.12/MapChanger.zip";
+    sha256 = "A01A05560D46F680ADDEA289BA7A0ECCCF3B5E026D60090CFE97E81333E928A1";
     dependencies = [ MagicUI Satchel Vasi  ];
   };
 RandoMapMod = mkHollowKnightMod {
     pname = "RandoMapMod";
-    version = "3.6.8.0";
-    url = "https://github.com/syyePhenomenol/RandoMapMod/releases/download/v3.6.8/RandoMapMod.zip";
-    sha256 = "E373C31A35755608AC282934E1CB603D194E72BB23B4C39BC9EF0617C30573FA";
+    version = "3.6.9.0";
+    url = "https://github.com/syyePhenomenol/RandoMapMod/releases/download/v3.6.9/RandoMapMod.zip";
+    sha256 = "CCE0AA749672B509F094034A59ECF7C512401B185090E18F15517DDFA00B926E";
     dependencies = [ ItemChanger MapChanger MenuChanger RandoMapCore Randomizer-4 RandomizerCore  ];
   };
 Twister-Indicator = mkHollowKnightMod {
@@ -3425,23 +3509,23 @@ GrassCore = mkHollowKnightMod {
   };
 BingoSync = mkHollowKnightMod {
     pname = "BingoSync";
-    version = "1.4.5.5";
-    url = "https://github.com/pedroteosousa/HollowKnight.BingoSync/releases/download/1.4.5.5/BingoSync.zip";
-    sha256 = "4E9B6228EEA32181C176FC1A131496BD54D247E1ED3A8CCC8466392CAE3ED332";
+    version = "1.6.2.3";
+    url = "https://github.com/pedroteosousa/HollowKnight.BingoSync/releases/download/1.6.2.3/BingoSync.zip";
+    sha256 = "AE7D3CAD67AC05F3E33FD43AF2A21495099C8FEE26A254FB83C48E0EC8F1CD95";
     dependencies = [ MagicUI Satchel ItemChanger  ];
   };
 BingoAdvancedCustomGeneration = mkHollowKnightMod {
     pname = "BingoAdvancedCustomGeneration";
-    version = "1.1.1.0";
-    url = "https://github.com/TheRealAlph4/HollowKnight.BingoAdvancedCustomGeneration/releases/download/v1.1.1.0/BingoAdvancedCustomGeneration.zip";
-    sha256 = "F3E197241B3D885AA6A661A90CCE323498819D80698191C6EB991846840090A7";
+    version = "1.2.1.2";
+    url = "https://github.com/TheRealAlph4/HollowKnight.BingoAdvancedCustomGeneration/releases/download/v1.2.1.2/BingoAdvancedCustomGeneration.zip";
+    sha256 = "160C883EDBE7295D9A09D7EFDBB22006208FDA74151CF254DC7B0292A7EFF7F2";
     dependencies = [ BingoSync ];
   };
 BingoGoalPackGrubDay = mkHollowKnightMod {
     pname = "BingoGoalPackGrubDay";
-    version = "1.0.0.0";
-    url = "https://github.com/TheRealAlph4/HollowKnight.BingoGoalPackGrubDay/releases/download/v1.0.0.0/BingoGoalPackGrubDay.zip";
-    sha256 = "AC654D9A52FF366842103B2687936672A7615C8203A6F32EFC4351BFFCDBADE2";
+    version = "1.1.0.0";
+    url = "https://github.com/TheRealAlph4/HollowKnight.BingoGoalPackGrubDay/releases/download/v1.1.0.0/BingoGoalPackGrubDay.zip";
+    sha256 = "228AFAB8322350CDD6FEAA6A829036CCFC9826348DC4CD0736D752A7150A11B1";
     dependencies = [ BingoSync BingoGoalPack1  ];
   };
 Soul-Paladin = mkHollowKnightMod {
@@ -3922,23 +4006,23 @@ GearSwitcher = mkHollowKnightMod {
   };
 ReplayLogger = mkHollowKnightMod {
     pname = "ReplayLogger";
-    version = "1.1.0.6";
-    url = "https://github.com/NightFuryoOo/ReplayLogger/releases/download/v1.1.0.6/ReplayLogger.zip";
-    sha256 = "29ed3e8c93b8150751b7b8d2b7c4df6e309a13450152199408940bc5b77727ac";
+    version = "2.0.0.2";
+    url = "https://github.com/NightFuryoOo/ReplayLogger/releases/download/v2.0.0.2/ReplayLogger.zip";
+    sha256 = "557e6e9553bbfbac686bdb67c61f5052ba38b0ce483138c122d144a8159c0a44";
     dependencies = [ Satchel ];
   };
 GodhomeQoL = mkHollowKnightMod {
     pname = "GodhomeQoL";
-    version = "1.0.1.3";
-    url = "https://github.com/NightFuryoOo/GodhomeQoL/releases/download/v1.0.1.3/GodhomeQoL.zip";
-    sha256 = "a5fc55e3987251b66eec364bfb053be34826b4ab1801b98b1cace4e1a9fdab45";
+    version = "2.1.0.0";
+    url = "https://github.com/NightFuryoOo/GodhomeQoL/releases/download/v2.1.0.0/GodhomeQoL.zip";
+    sha256 = "1cda8026dce1eacb11711678869ffb0c86f7febdbddeedc137bc2be22d2adf74";
     dependencies = [ Osmi Satchel Vasi  ];
   };
 HKBattle = mkHollowKnightMod {
     pname = "HKBattle";
-    version = "1.0.0.3";
-    url = "https://github.com/NightFuryoOo/HKBattle/releases/download/v1.0.0.3/HKBattle.zip";
-    sha256 = "cd361771daaacb00f6cbc8744298a76015f78349ea9ac2b2effde25531ded0c6";
+    version = "1.0.0.4";
+    url = "https://github.com/NightFuryoOo/HKBattle/releases/download/v1.0.0.4/HKBattle.zip";
+    sha256 = "061cbb74b8a0b2598ffe94c0c885aa8963cb5d77fa0163fe3153cf83db34c2f4";
     dependencies = [  ];
   };
 Fishing = mkHollowKnightMod {
@@ -3971,9 +4055,9 @@ Silksong-Start-Screen = mkHollowKnightMod {
   };
 RandoMapCore = mkHollowKnightMod {
     pname = "RandoMapCore";
-    version = "1.0.19.0";
-    url = "https://github.com/syyePhenomenol/RandoMapCore/releases/download/v1.0.19/RandoMapCore.zip";
-    sha256 = "C8CAEC5FD204DB61006366C6B01478B91B2163090394CF2D56A7801AC44A5C73";
+    version = "1.0.20.0";
+    url = "https://github.com/syyePhenomenol/RandoMapCore/releases/download/v1.0.20/RandoMapCore.zip";
+    sha256 = "FD4695A0641F3167AB27FACDA9D5D19C3F16361D849AB2BA96158401127A010C";
     dependencies = [ ConnectionMetadataInjector ItemChanger MagicUI MapChanger RandomizerCore RandomizerCore-Json RCPathfinder  ];
   };
 Smart-Nail = mkHollowKnightMod {
@@ -4048,9 +4132,9 @@ ArchitectLegacy = mkHollowKnightMod {
   };
 Architect = mkHollowKnightMod {
     pname = "Architect";
-    version = "3.35.0.0";
-    url = "https://github.com/cometcake575/Architect-HK/releases/download/3.35.0.0/Architect.zip";
-    sha256 = "ad473ae2b6621d8053f56cfd3eec7a881e643ad1208064b63d554170b8f02e87";
+    version = "3.40.2.1";
+    url = "https://github.com/cometcake575/Architect-HK/releases/download/3.40.2.1/Architect.zip";
+    sha256 = "a59e060e32a9ffff7d42aae0ac856a7b941436d9d997525bea25d7849f8330fc";
     dependencies = [ Satchel FsmMaster ItemChanger ItemCreator SFCore  ];
   };
 ItemCreator = mkHollowKnightMod {
@@ -4065,6 +4149,13 @@ FsmSeer = mkHollowKnightMod {
     version = "1.0.0.0";
     url = "https://github.com/cometcake575/FSMSeer-HK/releases/download/1.0.0.0/FSMSeer.zip";
     sha256 = "fcda0931c03573f2438dcf75c672b6561d4be820ab2dbb7397114b74396f362e";
+    dependencies = [  ];
+  };
+FasterAnimators = mkHollowKnightMod {
+    pname = "FasterAnimators";
+    version = "1.0.0.0";
+    url = "https://github.com/cometcake575/FasterAnimators/releases/download/1.0.0.0/FasterAnimators.zip";
+    sha256 = "bd2319a2ee914d1a88d2b31db29d29c93a71c6d2c84787bd0e93280ed0071a70";
     dependencies = [  ];
   };
 UltimateChickenKnight = mkHollowKnightMod {
@@ -4090,9 +4181,9 @@ ExaltationExpanded = mkHollowKnightMod {
   };
 CustomizableAbilities = mkHollowKnightMod {
     pname = "CustomizableAbilities";
-    version = "1.3.4.1";
-    url = "https://github.com/kon4ino/CustomizableAbilities/releases/download/1.3.4.1/CustomizableNailDamage.zip";
-    sha256 = "ce975c343efc70596115ef0c3f3da7254e6f4fc272f521699aec0b37697adb5e";
+    version = "1.5.0.1";
+    url = "https://github.com/kon4ino/CustomizableAbilities/releases/download/1.5.0.1/CustomizableNailDamage.zip";
+    sha256 = "6951d17a3b07d92de8618cae6a0263ac5b9ef550a8a12e3b246814074b54c270";
     dependencies = [ Satchel HKMirror SFCore  ];
   };
 QoLTeleportKit = mkHollowKnightMod {
@@ -4118,9 +4209,9 @@ DashChanger = mkHollowKnightMod {
   };
 PlatformingQoL = mkHollowKnightMod {
     pname = "PlatformingQoL";
-    version = "1.2.0.0";
-    url = "https://github.com/Ishmael-GameDev/Platforming-QoL-mod/releases/download/PlatformingQoL-v1.2.0/Platforming.QoL.zip";
-    sha256 = "323cf9dd9e70eb452b7ae0f518e6998fcd8572debc23fb2c8e1d76d762849084";
+    version = "1.3.0.0";
+    url = "https://github.com/Ishmael-GameDev/Platforming-QoL-mod/releases/download/v3/PlatformingQoL.dll";
+    sha256 = "6c1046297503fd639399522da579694ab2f890569e3f27f1abc04c1bdf32143e";
     dependencies = [  ];
   };
 ShowHPOnDeath = mkHollowKnightMod {
@@ -4160,9 +4251,9 @@ DPSMeter = mkHollowKnightMod {
   };
 Pale-Court-Charms = mkHollowKnightMod {
     pname = "Pale Court Charms";
-    version = "1.4.0.0";
-    url = "https://github.com/Roma-337/PaleCourtCharms/releases/download/v1.4.0/PaleCourtCharms.zip";
-    sha256 = "3d877111f06a8febae07b72d582856b5d39234bbe2618df76f7eb9c9e770f684";
+    version = "1.4.1.0";
+    url = "https://github.com/Roma-337/PaleCourtCharms/releases/download/v1.4.1/PaleCourtCharms.zip";
+    sha256 = "0218d143fb89df88afb21548fab6db382a5bcf6289cde724d9e7b1f3e5837aa8";
     dependencies = [ ItemChanger SFCore Vasi  ];
   };
 HKMP-VoiceChat = mkHollowKnightMod {
@@ -4475,9 +4566,9 @@ SyncDreamShield = mkHollowKnightMod {
   };
 MendBreakables = mkHollowKnightMod {
     pname = "MendBreakables";
-    version = "1.0.0.0";
-    url = "https://github.com/danielstegink/HollowKnight.MendBreakables/releases/download/1.0.0.0/MendBreakables.zip";
-    sha256 = "87d1abed4c3d9f033dd71534182dbff2bb828780f370a790e76dfe6f0c03fc90";
+    version = "1.0.1.0";
+    url = "https://github.com/danielstegink/HollowKnight.MendBreakables/releases/download/1.0.1.0/MendBreakables.zip";
+    sha256 = "5C4C95EE414F7C99F73FB3EE44E457F31DA97942F9AFF381787D02E40FEDC566";
     dependencies = [ Satchel ];
   };
 AuraRad = mkHollowKnightMod {
@@ -4531,9 +4622,9 @@ RngSync = mkHollowKnightMod {
   };
 Charm-Rebalanced = mkHollowKnightMod {
     pname = "Charm Rebalanced";
-    version = "3.0.6.0";
-    url = "https://github.com/GyVn87/Charm-Rebalanced-Mod/releases/download/v3.0.6.0/CharmRebalanced.zip";
-    sha256 = "cd9c8b928c8dd57d8432072c6701738f9f215359eab87f41efe441d630fb22cf";
+    version = "3.0.7.0";
+    url = "https://github.com/GyVn87/Charm-Rebalanced-Mod/releases/download/v3.0.7.0/CharmRebalanced.zip";
+    sha256 = "15c78ed5d2a4a49d2badb58be2d749fb2464cebbe3edad04ec29f3c08dcfccb0";
     dependencies = [ SFCore ];
   };
 Charmforging = mkHollowKnightMod {
@@ -4552,10 +4643,10 @@ Noclip-Accuracy = mkHollowKnightMod {
   };
 Ghost-Macro = mkHollowKnightMod {
     pname = "Ghost Macro";
-    version = "1.0.0.0";
-    url = "https://github.com/Ishmael-GameDev/Ghost-Macro/releases/download/v1/Ghost.Macro.dll";
-    sha256 = "7ab6653de492767c8b9807607ce0afa93fde3f83fd21df31fb8dbf8f5ccd71fd";
-    dependencies = [ Satchel MagicUI DebugMod  ];
+    version = "2.0.0.0";
+    url = "https://github.com/Ishmael-GameDev/Ghost-Macro/releases/download/v2/Ghost.Macro.dll";
+    sha256 = "08bb6fd32aa4082ab24aa67637bc2ac7ffb3926bfcb7445637cc55b841163f47";
+    dependencies = [ Satchel ];
   };
 Spell-Counter = mkHollowKnightMod {
     pname = "Spell Counter";
@@ -4566,9 +4657,9 @@ Spell-Counter = mkHollowKnightMod {
   };
 RespawnPoint-Manager = mkHollowKnightMod {
     pname = "RespawnPoint Manager";
-    version = "1.3.0.0";
-    url = "https://github.com/Ishmael-GameDev/Respawn-Point-Manager/releases/download/v3/RespawnPointManager.dll";
-    sha256 = "01ca59e9f54de1c9c23385db23c1a96edfb8fbf01a371450719cc297734fa5f4";
+    version = "1.4.0.0";
+    url = "https://github.com/Ishmael-GameDev/Respawn-Point-Manager/releases/download/v4/RespawnPointManager.dll";
+    sha256 = "db9f0f32701d998c637b9857c8ce58473bd5f1b5aaeac7b710f467baf9a0253e";
     dependencies = [ Satchel ];
   };
 Hallowest = mkHollowKnightMod {
@@ -4601,9 +4692,9 @@ WhatTheMoth = mkHollowKnightMod {
   };
 Another-Location = mkHollowKnightMod {
     pname = "Another Location";
-    version = "1.0.0.0";
-    url = "https://github.com/Roma-337/AnotherLocation/releases/download/v1.0.0.0/AnotherLocation.zip";
-    sha256 = "c0e58d784014e470fc3a93f89bfe61a2ec1ce0d85c9d2ada46f2cb68143398c2";
+    version = "1.0.0.1";
+    url = "https://github.com/Roma-337/AnotherLocation/releases/download/v1.0.0.1/AnotherLocation.zip";
+    sha256 = "cbaef0e21c93b5d2771c6b2f1e42dee143da0bba5a8f5e8f57ebd09ee64fbf36";
     dependencies = [ Randomizer-4 ];
   };
 FsmMaster = mkHollowKnightMod {
@@ -4643,16 +4734,16 @@ Withered-Foxy-1-in-10000 = mkHollowKnightMod {
   };
 Teleport-Master = mkHollowKnightMod {
     pname = "Teleport Master";
-    version = "1.0.0.0";
-    url = "https://github.com/Ishmael-GameDev/Teleport-Master/releases/download/v1/TeleportMaster.dll";
-    sha256 = "d79ecf1f55b55a95d8d5c1e4385b4dd6233669a9e5be52225c231742e7eec35b";
+    version = "1.5.0.0";
+    url = "https://github.com/Ishmael-GameDev/Teleport-Master/releases/download/v1.5/TeleportMaster.dll";
+    sha256 = "dd2a1b08d61463b815b4bbd9453e9a63ca497459f1b75d58ec94307051dfcdce";
     dependencies = [ MapChanger AdditionalMaps CompassAlwaysOn Fast-Travel  ];
   };
 GlobalList-Atlas = mkHollowKnightMod {
     pname = "GlobalList Atlas";
-    version = "1.0.0.0";
-    url = "https://github.com/Ishmael-GameDev/GlobalList-Atlas/releases/download/v1/GlobalListAtlas.dll";
-    sha256 = "da5861f2361c1b051a98d2e0cfe4551b6d7774aac8fe077441864bbac46ff7b8";
+    version = "2.6.0.0";
+    url = "https://github.com/Ishmael-GameDev/GlobalList-Atlas/releases/download/v2.6/GlobalListAtlas.dll";
+    sha256 = "c3206dab1f2069318167df2f9de119ed90ed94841f8e788466664111f14cd291";
     dependencies = [  ];
   };
 HalallowKnight = mkHollowKnightMod {
@@ -4689,6 +4780,167 @@ Instawings-Helper = mkHollowKnightMod {
     url = "https://github.com/Ishmael-GameDev/Instawings-Helper/releases/download/v1/Instawings_Helper.dll";
     sha256 = "306f1a0434d30afe8cda2f822a205b7128225e8b64f22b3d6445b3ddb77820c4";
     dependencies = [ Satchel ];
+  };
+BetterScreenShot = mkHollowKnightMod {
+    pname = "BetterScreenShot";
+    version = "1.0.0.0";
+    url = "https://github.com/Ishmael-GameDev/BetterScreenShot/releases/download/v1/BetterScreenShot.dll";
+    sha256 = "2d22fe7934c69bdcb0cc92f3ad1934fe7acea9c2f5cba94467f24885618498a2";
+    dependencies = [  ];
+  };
+HKMP-Rounds = mkHollowKnightMod {
+    pname = "HKMP.Rounds";
+    version = "1.2.0.0";
+    url = "https://github.com/aristocrat27/HKMP.Rounds/releases/download/1.2.0.0/HKMP.Rounds.zip";
+    sha256 = "23b8850e28e21fd33148b8b1df07800a3aabd81a69307af7064f8cf9e7990e0d";
+    dependencies = [ HKMP ];
+  };
+HKMP-Timer = mkHollowKnightMod {
+    pname = "HKMP.Timer";
+    version = "1.1.0.0";
+    url = "https://github.com/aristocrat27/HKMP.Timer/releases/download/1.1.0.0/HKMP.Timer.zip";
+    sha256 = "530f38ae68d60c3ef01d5913c9afc835e4ce4067c0d7f47a43b78fc68d438ba5";
+    dependencies = [ HKMP Satchel  ];
+  };
+OneShot-PvP = mkHollowKnightMod {
+    pname = "OneShot PvP";
+    version = "1.0.0.0";
+    url = "https://github.com/aristocrat27/OneShot-PvP/releases/download/Release/OneShot_PvP.zip";
+    sha256 = "dacd9d0b0fbdd6b149136a440a5131b42f2e2bc278a11b63345114207e349f7b";
+    dependencies = [ HKMP ];
+  };
+MusicShuffle = mkHollowKnightMod {
+    pname = "MusicShuffle";
+    version = "1.0.1.0";
+    url = "https://github.com/thoughthouse/HollowKnight.MusicShuffle/releases/download/1.0.2.0/MusicShuffle.zip";
+    sha256 = "6087ce0199238b9738846c1af1f3f9f9e2d152f26bbe7e876cb0aab755b6601d";
+    dependencies = [ Osmi Satchel  ];
+  };
+HollowKnightTAS = mkHollowKnightMod {
+    pname = "HollowKnightTAS";
+    version = "0.1.7.0";
+    url = "https://github.com/windplusflower/HollowKnightTASMod/releases/download/v0.1.7/HollowKnightTAS.zip";
+    sha256 = "af993061af51ef7ed12804704dec0fbf250f06e8a519e395d2dc1a3f243ce58f";
+    dependencies = [  ];
+  };
+VocesDelVacio = mkHollowKnightMod {
+    pname = "VocesDelVacio";
+    version = "1.0.0.0";
+    url = "https://github.com/smartmovil825-beep/VocesdelVacio/releases/download/1.0.0.0/VocesdelVacio.zip";
+    sha256 = "558EE0C1342A7A0AB95FD1E335308110D6466CF0BA6BA7DB4DED597648B6A2D5";
+    dependencies = [ Satchel Core-FsmUtil HKMirror SFCore FrogCore  ];
+  };
+mahoraga-wheel = mkHollowKnightMod {
+    pname = "mahoraga-wheel";
+    version = "1.1.0.0";
+    url = "https://github.com/OsHK00/mahoraga-halo/releases/download/v1.1.0/mahoraga-halo.zip";
+    sha256 = "0a7c7d6028e42d2fffcb3ec92562c3c7fd0ff76de3a7542e42100a56d090ed35";
+    dependencies = [ Satchel ModCommon  ];
+  };
+Hollow-Knight-Native-Rumble-—-macOS = mkHollowKnightMod {
+    pname = "Hollow Knight Native Rumble — macOS";
+    version = "1.0.0.0";
+    url = "https://github.com/Last1kkk/hollow-knight-native-rumble/releases/download/v1.0.0/Hollow-Knight-Native-Rumble-v1.0.0.zip";
+    sha256 = "8093aaf4b64a12127abdc13e127db562dc53b0155cf5f796bd6757c4ff42c87d";
+    dependencies = [  ];
+  };
+Hollow-Knight-8-Player-Co-op = mkHollowKnightMod {
+    pname = "Hollow Knight 8-Player Co-op";
+    version = "0.11.2.0";
+    url = "https://github.com/RaulSB-code/HollowKnight-Local8/releases/download/v0.11.2/HollowKnightLocal8-v0.11.2.zip";
+    sha256 = "62FB936525F5A6A704A3C6854CBFC289C258F3DFD84A0148DEE4732BA9EDCB8A";
+    dependencies = [  ];
+  };
+Bullshittery = mkHollowKnightMod {
+    pname = "Bullshittery";
+    version = "1.5.69.5";
+    url = "https://github.com/ChadMcOrgans2022/Bullshittery/releases/download/v1.5.69.5/Bullshittery.1.5.69.5.zip";
+    sha256 = "e8fc9f3a2ea38ce902b505e22580e7bd767b9b3e18d1a6e979855e4529a9e4f8";
+    dependencies = [  ];
+  };
+HKMP-List = mkHollowKnightMod {
+    pname = "HKMP.List";
+    version = "1.1.0.0";
+    url = "https://github.com/aristocrat27/HKMP.List/releases/download/1.1.0.0/HKMP.List.zip";
+    sha256 = "7ebc40f079b4784e91b6ca88a5635232397389c3928d78efc60a456ee6fdb2ef";
+    dependencies = [ HKMP ];
+  };
+GreenKnight = mkHollowKnightMod {
+    pname = "GreenKnight";
+    version = "1.0.255.0";
+    url = "https://github.com/ChadMcOrgans2022/GreenKnight/releases/download/v1.0.255.0/GreenKnight.1.0.255.0.zip";
+    sha256 = "d2c8879f72128b5e514c03ae9929077a8ad19f6f0627bf4ee953fa2e2d65beee";
+    dependencies = [  ];
+  };
+HKMP-Spectator = mkHollowKnightMod {
+    pname = "HKMP.Spectator";
+    version = "1.0.0.0";
+    url = "https://github.com/aristocrat27/HKMP.Spectator/releases/download/Release/HKMP.Spectator.zip";
+    sha256 = "f599994ca2fa5e7c814815b277c722546596da8978701508fd3b7f1a48d65b47";
+    dependencies = [ HKMP ];
+  };
+Champion's-Shell = mkHollowKnightMod {
+    pname = "Champion's Shell";
+    version = "0.1.0.0";
+    url = "https://github.com/owenqren/Champion-s-Shell/releases/download/v0.1.0/ChampionsShell.zip";
+    sha256 = "67250a8705919b00fe9ff682241c7544b1221fbbfd07370bfddd52d85f49d4e6";
+    dependencies = [ SFCore ];
+  };
+GeoShare = mkHollowKnightMod {
+    pname = "GeoShare";
+    version = "0.9.0.0";
+    url = "https://github.com/Euktop/HKMP-GeoShare/releases/download/v0.9.0-beta/GeoShare.zip";
+    sha256 = "F0D0A36AF2E563EBC2DFD9C5D9C99F9B6D1DE71E8837417E37101F3FC37F8241";
+    dependencies = [ HKMP ];
+  };
+QoL-Lite = mkHollowKnightMod {
+    pname = "QoL.Lite";
+    version = "1.0.0.0";
+    url = "https://github.com/kyleanderror13/QoL.Lite/releases/download/v1.0.0/QoL.Lite.zip";
+    sha256 = "86ebc74accc9e6669f19fa27237c6d2ee8f3f1babf8ddcf31926e374038ae0a6";
+    dependencies = [ Vasi ];
+  };
+Gaslight = mkHollowKnightMod {
+    pname = "Gaslight";
+    version = "1.1.0.0";
+    url = "https://github.com/Sova-89/Gaslight/releases/download/v1.1.0/Gaslight.zip";
+    sha256 = "f1dc6ed7d6004ab327cf052be55c1c197c7fa406277eb3b93608dbc99e0b5d96";
+    dependencies = [  ];
+  };
+Stumble = mkHollowKnightMod {
+    pname = "Stumble";
+    version = "0.2.0.0";
+    url = "https://github.com/BShadid/HKStumbleMod/releases/download/v0.2/Stumble.zip";
+    sha256 = "0d0b8b4523fdd4353bfd449a125775bd843222b3ea08eb422a7945b1dc058b22";
+    dependencies = [  ];
+  };
+HKMP-MoreTeams = mkHollowKnightMod {
+    pname = "HKMP.MoreTeams";
+    version = "1.0.0.0";
+    url = "https://github.com/aristocrat27/HKMP.MoreTeams/releases/download/Release/HKMP.MoreTeams.zip";
+    sha256 = "c7e6b9ecbe7ac80434d4bb0037afca79ca723b9d983efdcc062e213ea8899b19";
+    dependencies = [ HKMP ];
+  };
+ParryMod = mkHollowKnightMod {
+    pname = "ParryMod";
+    version = "1.0.0.0";
+    url = "https://github.com/Lewixen/Parry-and-Back-Dash-Mods/releases/download/v1.0.0.0/ParryMod.zip";
+    sha256 = "ee6971917f039f7faa9546c3e104383a86adafa12fd98248cf1c69fb0f011a37";
+    dependencies = [ SFCore ];
+  };
+Back-Dash = mkHollowKnightMod {
+    pname = "Back Dash";
+    version = "1.0.0.0";
+    url = "https://github.com/Lewixen/Parry-and-Back-Dash-Mods/releases/download/v1.0.0.0/BackDash.zip";
+    sha256 = "e74357e8c479aade91ae248825b69ae0ec4359337f58c43a86ddbe1ff80f36ef";
+    dependencies = [  ];
+  };
+CreatureSpawner = mkHollowKnightMod {
+    pname = "CreatureSpawner";
+    version = "1.0.0.0";
+    url = "https://github.com/rennpas/CreatureSpawner/releases/download/v1.0.0/CreatureSpawner.zip";
+    sha256 = "a06ef4d10bb49efd769181e7f8d1a81da5c5a622641ca656622dbcb9cfc42b7f";
+    dependencies = [  ];
   };
 
 }

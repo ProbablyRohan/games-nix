@@ -6,6 +6,236 @@
     "@xsi:schemaLocation": "https://github.com/HollowKnight-Modding/HollowKnight.ModLinks/HollowKnight.ModManager https://raw.githubusercontent.com/HollowKnight-Modding/HollowKnight.ModLinks/main/Schemas/ModLinks.xml",
     "Manifest": [
       {
+        "Name": "core.GMIC",
+        "DisplayName": "core.G'MIC",
+        "Description": "a collection of HK-compatible shaders from G'MIC",
+        "Version": "0.1.0.0",
+        "Link": {
+          "@SHA256": "c876ccb9c4cede827ed53d9b590f035811b6e1525873e1ef1514365713f4efdb",
+          "#text": "https://github.com/Pikatyu8/core.G-MIC/releases/download/v0.1.0/core.GMIC.dll"
+        },
+        "Dependencies": {
+          "Dependency": "Satchel"
+        },
+        "Repository": "https://github.com/Pikatyu8/core.G-MIC",
+        "ReadMe": "https://github.com/Pikatyu8/core.G-MIC/raw/refs/heads/main/README.md",
+        "Issues": "https://github.com/Pikatyu8/core.G-MIC/issues",
+        "Tags": {
+          "Tag": [
+            "Cosmetic",
+            "Library",
+            "LLM-Assisted"
+          ]
+        },
+        "Authors": {
+          "Author": "Pikatyu8"
+        }
+      },
+      {
+        "Name": "NightmareAccess",
+        "DisplayName": "Nightmare Access",
+        "Description": "Adds randomized non-consumable access requirements (Geo, Eggs, Essence, abilities, collectibles, etc.) to Randomizer 4 items and locations.",
+        "Version": "1.1.0.6",
+        "Link": {
+          "@SHA256": "0a5d5e9d1d5fbbfa446ed04aeda8cc4fe6cc64ba35bc2441581927c4082eba04",
+          "#text": "https://github.com/Pikatyu8/NightmareAccess/releases/download/v1.1.0.6/NightmareAccess.dll"
+        },
+        "Dependencies": {
+          "Dependency": [
+            "ItemChanger",
+            "MenuChanger",
+            "Randomizer 4",
+            "Satchel"
+          ]
+        },
+        "Repository": "https://github.com/Pikatyu8/NightmareAccess",
+        "ReadMe": "https://github.com/Pikatyu8/NightmareAccess/raw/refs/heads/main/README.md",
+        "Issues": "https://github.com/Pikatyu8/NightmareAccess/issues",
+        "Integrations": {
+          "Integration": [
+            "AccessRandomizer",
+            "AlphabetRando",
+            "BenchRando",
+            "Breakable Wall Randomizer",
+            "CombatRandomizer",
+            "CorpseDreamRando",
+            "Curse Randomizer",
+            "DarknessRandomizer",
+            "Extra Rando",
+            "Fishing",
+            "FlowerRandomizer",
+            "GodhomeRandomizer",
+            "Lore Randomizer",
+            "MoreLocations",
+            "MoreStags",
+            "RandoPlus",
+            "RandoSettingsManager",
+            "RgbRando",
+            "Rope Rando",
+            "TheGloryOfBeingAFoolRandomizer",
+            "YetAnotherRandoConnection"
+          ]
+        },
+        "Tags": {
+          "Tag": [
+            "Gameplay",
+            "LLM-Assisted"
+          ]
+        },
+        "Authors": {
+          "Author": "Pikatyu8"
+        }
+      },
+      {
+        "Name": "ItemReveal",
+        "DisplayName": "ItemReveal",
+        "Description": "A Hollow Knight mod that allows you to reveal the location of specific items on the map at the start of a randomizer 4 save.",
+        "Version": "0.1.0.0",
+        "Link": {
+          "@SHA256": "8b2aed1c694fd14cce7c1737ad30c97f8003751db9e788db7714cb1c78ac4b2b",
+          "#text": "https://github.com/jwwood3/ItemReveal/releases/download/v0.1.0.0/ItemReveal.zip"
+        },
+        "Dependencies": {
+          "Dependency": [
+            "Randomizer 4",
+            "RandomizerCore",
+            "ItemChanger",
+            "MenuChanger",
+            "MapChanger",
+            "RandoMapMod",
+            "RandoMapCore",
+            "RandoSettingsManager"
+          ]
+        },
+        "Repository": "https://github.com/jwwood3/ItemReveal",
+        "ReadMe": "https://github.com/jwwood3/ItemReveal/blob/main/ReadMe.md",
+        "Issues": "https://github.com/jwwood3/ItemReveal/issues",
+        "Tags": {
+          "Tag": [
+            "Gameplay",
+            "LLM-Assisted",
+            "Utility"
+          ]
+        },
+        "Authors": {
+          "Author": "Jackson Wood"
+        }
+      },
+      {
+        "Name": "SuperUltrawideHUD",
+        "DisplayName": "Super Ultrawide HUD (32:9)",
+        "Description": "HUD and menu layout fixes for 32:9 super-ultrawide screens only (e.g. 5120x1440). Moves the HUD to the screen edge, makes inventory, map, charms, journal, shop and pause menus use the full width. Every fix has its own On/Off switch. Requires WideCamera.",
+        "Version": "1.0.1.0",
+        "Link": {
+          "@SHA256": "29E56AB609397FED8BC50C24D5ACCDDC877D8506DD13116B7C5A5C67DC048CDF",
+          "#text": "https://github.com/jinxcase000/SuperUltrawideHUD/releases/download/v1.0.1.0/SuperUltrawideHUD.zip"
+        },
+        "Dependencies": {
+          "Dependency": "WideCamera"
+        },
+        "Repository": "https://github.com/jinxcase000/SuperUltrawideHUD",
+        "ReadMe": "https://github.com/jinxcase000/SuperUltrawideHUD/raw/refs/heads/main/README.md",
+        "Issues": "https://github.com/jinxcase000/SuperUltrawideHUD/issues",
+        "Tags": {
+          "Tag": [
+            "Utility",
+            "LLM-Assisted"
+          ]
+        },
+        "Authors": {
+          "Author": "jinxcase000"
+        }
+      },
+      {
+        "Name": "BadApple",
+        "DisplayName": "Bad Apple!!",
+        "Description": "Plays the Bad Apple!! shadow-art music video on a loop over the whole game. You can only see the game through the inside of the silhouettes. Purely visual, with optional music, background and size settings.",
+        "Version": "1.0.0.0",
+        "Link": {
+          "@SHA256": "c6d0328d8ce100a6e3b0420766b6dafc80d6cfd74fc50532defff810c7bc6a3f",
+          "#text": "https://github.com/Dreamy-Catty/HollowKnight.BadApple/releases/download/v1.0.0.0/BadApple.zip"
+        },
+        "Dependencies": null,
+        "Repository": "https://github.com/Dreamy-Catty/HollowKnight.BadApple",
+        "ReadMe": "https://github.com/Dreamy-Catty/HollowKnight.BadApple/raw/refs/heads/main/README.md",
+        "Issues": "https://github.com/Dreamy-Catty/HollowKnight.BadApple/issues",
+        "Tags": {
+          "Tag": [
+            "Cosmetic",
+            "Joke"
+          ]
+        },
+        "Authors": {
+          "Author": "Dreamy-Catty"
+        }
+      },
+      {
+        "Name": "TerrariaArsenal",
+        "DisplayName": "Hollow Knight: But Terraria Wanted Me to Play It, So It Took My Game and Forced Me to Play It",
+        "Description": "Play Hollow Knight as a Terraria character: 36 Terraria weapons (melee, ranged, magic, summoner with whips) from chests after bosses, Terraria accessories instead of movement abilities, Terraria boss bar, character creator and Terraria music. Requires Terraria installed - all Terraria assets are loaded from your own copy.",
+        "Version": "1.0.2.0",
+        "Link": {
+          "@SHA256": "C5CEAB8462FC32F2F5B38D18A4DE2C2C90B4CED73094381A94E034BB0B5C204D",
+          "#text": "https://raw.githubusercontent.com/Kaenari/Hollow-Knight-But-Terraria-Wanted-Me-to-Play-It-So-It-Took-My-Game-and-Forced-Me-to-Play-It/afd0095fa9b1ea9be48a5a09cbde15181d193def/release/TerrariaArsenal_1.0.2.0.zip"
+        },
+        "Dependencies": null,
+        "Repository": "https://github.com/Kaenari/Hollow-Knight-But-Terraria-Wanted-Me-to-Play-It-So-It-Took-My-Game-and-Forced-Me-to-Play-It",
+        "Tags": {
+          "Tag": [
+            "Expansion",
+            "Gameplay",
+            "LLM-Assisted"
+          ]
+        },
+        "Authors": {
+          "Author": "Kaenari"
+        }
+      },
+      {
+        "Name": "BetterParrying",
+        "DisplayName": "BetterParrying",
+        "Description": "Simplifies the game's parrying mechanics.",
+        "Version": "1.0.0.0",
+        "Link": {
+          "@SHA256": "535F917D2FAFF5DAFD81ABED23857A95761C143BC465722974623453759BF6C8",
+          "#text": "https://github.com/user500050/HKBetterParrying/releases/download/v.1.0.0/BetterParrying.zip"
+        },
+        "Dependencies": null,
+        "Repository": "https://github.com/user500050/HKBetterParrying",
+        "Issues": "https://github.com/user500050/HKBetterParrying/issues",
+        "Tags": {
+          "Tag": [
+            "Accessibility",
+            "Gameplay"
+          ]
+        },
+        "Authors": {
+          "Author": "user500050"
+        }
+      },
+      {
+        "Name": "MidAirHealing",
+        "DisplayName": "MidAirHealing",
+        "Description": "Allows you to heal in mid-air (as well as on water).",
+        "Version": "1.1.0.0",
+        "Link": {
+          "@SHA256": "8BE1DFDA204CCA1DECA0A12943A4623221077B62EE57F01CB789E16AFD596A0D",
+          "#text": "https://github.com/user500050/HKMidAirHealing/releases/download/v.1.1.0/MidAirHealing.zip"
+        },
+        "Dependencies": null,
+        "Repository": "https://github.com/user500050/HKMidAirHealing",
+        "Issues": "https://github.com/user500050/HKMidAirHealing/issues",
+        "Tags": {
+          "Tag": [
+            "Accessibility",
+            "Gameplay"
+          ]
+        },
+        "Authors": {
+          "Author": "user500050"
+        }
+      },
+      {
         "Name": "Input Display",
         "Description": "Shows an input display in the bottom right corner. Compatible with both controller and mouse/keyboard.",
         "Version": "1.0.0.0",
@@ -406,11 +636,11 @@
       {
         "Name": "ReplayTimerMod",
         "DisplayName": "Replay Timer Mod",
-        "Description": "Records your best times through each room and plays it back as a ghost on your next attempt.",
-        "Version": "0.4.0.0",
+        "Description": "Times every room and replays your best run through it as a ghost. Runs can be copied and shared with others.",
+        "Version": "0.1.0.0",
         "Link": {
-          "@SHA256": "7b7087843d9cd2ecadf9aa07bbfdeb66531a6dd471ec8693a9228dc5cda30f0f",
-          "#text": "https://github.com/AdiPrk/ReplayTimerMod/releases/download/v0.4.0/ReplayModHK1578.zip"
+          "@SHA256": "3b7eb65dc58cecc5f4906109100f1aaa26c84b81f356f61608b5f0ebc4d8bb8e",
+          "#text": "https://github.com/AdiPrk/ReplayTimerMod/releases/download/v1.0.0/ReplayModHK1578.zip"
         },
         "Dependencies": null,
         "Repository": "https://github.com/AdiPrk/ReplayTimerMod",
@@ -517,16 +747,16 @@
         "Version": "1.0.0.4",
         "Link": {
           "@SHA256": "e7d10561faef728dd1798a2a692ef30adfc525b4548b81c6b57538dfc62b1fd8",
-          "#text": "https://github.com/ultranumbzz/pantheon-architect/releases/download/1.0.0.4/PantheonArchitect.zip"
+          "#text": "https://codeberg.org/PantheonArchitect/PantheonArchitect/releases/download/1.0.0.4/PantheonArchitect.zip"
         },
         "Dependencies": null,
-        "Repository": "https://github.com/ultranumbzz/pantheon-architect",
-        "Issues": "https://github.com/ultranumbzz/pantheon-architect/issues",
+        "Repository": "https://codeberg.org/PantheonArchitect/PantheonArchitect",
+        "Issues": "https://codeberg.org/PantheonArchitect/PantheonArchitect/issues",
         "Tags": {
           "Tag": "Gameplay"
         },
         "Authors": {
-          "Author": "ULTRAnumbz"
+          "Author": "PantheonArchitect"
         }
       },
       {
@@ -828,10 +1058,10 @@
       {
         "Name": "Wrong Gravity",
         "Description": "Hallownest? Hɐlloʍuǝsʇ!",
-        "Version": "1.0.0.0",
+        "Version": "1.0.0.9",
         "Link": {
-          "@SHA256": "A95BCAE12E8DD96EEA1D1107A3CB71D3090525CE864BFBF6E34E3BCB542D5137",
-          "#text": "https://github.com/FrogBishop/HollowKnight.WrongGravity/releases/download/1.0.0.0/WrongGravity.zip"
+          "@SHA256": "C4B5C4A4C468288229855806567C5CD10F3DFBE6420A0BE7E371B86C944BA616",
+          "#text": "https://github.com/FrogBishop/HollowKnight.WrongGravity/releases/download/1.0.0.9/WrongGravity.zip"
         },
         "Dependencies": {
           "Dependency": "Vasi"
@@ -1138,10 +1368,10 @@
       {
         "Name": "BingoBoardReplay",
         "Description": "A mod for bingo tournament organizers to help restream the board when the players have stream delay. See GitHub readme for usage.",
-        "Version": "1.3.4.4",
+        "Version": "1.4.0.1",
         "Link": {
-          "@SHA256": "BC9794AB1F0317CED53436CAA18C035A83AD9ACB5A0F6117753DC684CF58E213",
-          "#text": "https://github.com/TheRealAlph4/HollowKnight.BingoBoardReplay/releases/download/v1.3.4.4/BingoBoardReplay.zip"
+          "@SHA256": "FF688CF519AB5C6179EB9B5D7F138D559273AB2963BCDE67DB871EB66FF07329",
+          "#text": "https://github.com/TheRealAlph4/HollowKnight.BingoBoardReplay/releases/download/v1.4.0.1/BingoBoardReplay.zip"
         },
         "Dependencies": {
           "Dependency": "BingoSync"
@@ -1204,6 +1434,85 @@
             "Nopre",
             "Kamakiller"
           ]
+        }
+      },
+      {
+        "Name": "Spell Staller Charms",
+        "Description": "Adds some fun spell-related charms",
+        "Version": "1.1.0.0",
+        "Link": {
+          "@SHA256": "b248c67953b84dce975c28c8c61e96f3ca39e66c76e3b15862635313dce2c639",
+          "#text": "https://github.com/Pengwizard/SpellStaller/releases/download/v1.1/SpellStaller.zip"
+        },
+        "Dependencies": {
+          "Dependency": [
+            "MenuChanger",
+            "ItemChanger",
+            "KorzUtils",
+            "SFCore",
+            "Vasi",
+            "Randomizer 4",
+            "RandomizerCore",
+            "RandomizerCore.Json",
+            "RandoSettingsManager",
+            "DebugMod"
+          ]
+        },
+        "Repository": "https://github.com/Pengwizard/SpellStaller/",
+        "Authors": {
+          "Author": "Nopre"
+        }
+      },
+      {
+        "Name": "Midautumn's Knightmare",
+        "Description": "Main mod for Nopre's 2026 Holloween Plando",
+        "Version": "1.0.0.0",
+        "Link": {
+          "@SHA256": "b8a9f7b917a52a98c721e1e57543e6e6f4ff70cfceff111b3c73c3e63ecc8bc8",
+          "#text": "https://github.com/Pengwizard/CorruptedDreamsPlando/releases/download/v1.3/CorruptedDreamsPlando.zip"
+        },
+        "Dependencies": {
+          "Dependency": [
+            "MoreDoors",
+            "Randomizer 4",
+            "ItemChangerDataLoader",
+            "ItemChanger",
+            "RandomizerCore",
+            "RandomizerCore.Json",
+            "RandoSettingsManager",
+            "MenuChanger",
+            "SFCore",
+            "Satchel",
+            "KorzUtils",
+            "MapChanger",
+            "PurenailCore",
+            "AccessRandomizer",
+            "CustomPoolInjector",
+            "DebugMod",
+            "ICExtraDeployers",
+            "ItemSync",
+            "QoL",
+            "Randomizable Levers",
+            "RandoPlus",
+            "RecentItemsDisplay",
+            "TheGloryOfBeingAFoolRandomizer",
+            "Spell Staller Charms",
+            "Scatternest",
+            "Extra Rando",
+            "BingoUI",
+            "Benchwarp",
+            "FStats",
+            "Rope Rando",
+            "FrogCore",
+            "RandoStats",
+            "HKTool",
+            "WavLib",
+            "RandoMapMod"
+          ]
+        },
+        "Repository": "https://github.com/Pengwizard/CorruptedDreamsPlando/",
+        "Authors": {
+          "Author": "Nopre"
         }
       },
       {
@@ -1296,10 +1605,10 @@
       {
         "Name": "BingoGoalPackSpleengy",
         "Description": "An alternate bingo goalpack designed for the lockout format",
-        "Version": "1.0.0.0",
+        "Version": "1.1.0.0",
         "Link": {
-          "@SHA256": "1ba9f902ce26971bdd23b73eb4cc5397a2c6d02952d063bf3ac411fdfaf13589",
-          "#text": "https://github.com/notahumanhand/BingoGoalPackSpleengy/releases/download/1.0/BingoGoalPackSpleengy.zip"
+          "@SHA256": "A4F39234182DEA5DAEC68352C4F93853A075D13B542D7E8FF60500992F35AFA3",
+          "#text": "https://github.com/TheRealAlph4/HollowKnight.BingoGoalPackSpleengy/releases/download/v1.1/BingoGoalPackSpleengy.zip"
         },
         "Dependencies": {
           "Dependency": [
@@ -1314,6 +1623,67 @@
             "spleen",
             "TheMathGeek_314"
           ]
+        }
+      },
+      {
+        "Name": "Isma's Embrace",
+        "Description": "A Randomizer connection for swimming beneath the surface",
+        "Version": "1.0.1.0",
+        "Link": {
+          "@SHA256": "4BFCDFDA0F5388F091C591ACB503A7BA14B2936B7F5DBD250BD70D0368629072",
+          "#text": "https://github.com/TheMathGeek314/IsmasEmbrace/releases/download/v1.0.1.0/IsmasEmbrace.zip"
+        },
+        "Dependencies": {
+          "Dependency": [
+            "HKTool",
+            "ItemChanger",
+            "MenuChanger",
+            "Randomizer 4",
+            "RandomizerCore",
+            "RandomizerCore.Json"
+          ]
+        },
+        "Repository": "https://github.com/TheMathGeek314/IsmasEmbrace/",
+        "Integrations": {
+          "Integration": [
+            "CondensedSpoilerLogger",
+            "ConnectionSettingsRando",
+            "RandoSettingsManager"
+          ]
+        },
+        "Authors": {
+          "Author": "TheMathGeek_314"
+        }
+      },
+      {
+        "Name": "GhostPlando",
+        "Description": "Supplemental code for the Incorporeal Echoes plando",
+        "Version": "1.0.0.1",
+        "Link": {
+          "@SHA256": "FC2C3C526C09E2C7F1F79F2A0BDBB648640A8A7F22DEC6D548BC5762C077144A",
+          "#text": "https://github.com/TheMathGeek314/GhostPlando/releases/download/v1.0.0.1/GhostPlando.zip"
+        },
+        "Dependencies": {
+          "Dependency": [
+            "AccessRandomizer",
+            "HKTool",
+            "ItemChanger",
+            "ItemChangerDataLoader",
+            "LoreCore",
+            "Lore Randomizer",
+            "MenuChanger",
+            "MoreDoors",
+            "Randomizer 4",
+            "RandomizerCore",
+            "WavLib"
+          ]
+        },
+        "Repository": "https://github.com/TheMathGeek314/GhostPlando/",
+        "Integrations": {
+          "Integration": "DebugMod"
+        },
+        "Authors": {
+          "Author": "TheMathGeek_314"
         }
       },
       {
@@ -1333,10 +1703,10 @@
       {
         "Name": "LegacyRando",
         "Description": "A Randomizer connection for old removed objects",
-        "Version": "1.0.0.0",
+        "Version": "1.0.1.0",
         "Link": {
-          "@SHA256": "D45FCD1D31A6F060BEFD30D15B54326EFDA40F59E6F6E89B770A0E3C41DA956A",
-          "#text": "https://github.com/TheMathGeek314/LegacyRando/releases/download/v1.0.0.0/LegacyRando.zip"
+          "@SHA256": "8A59265DDA829021F25931B1A586042DE376FB8F13E4DBAA73B4A6187B27FDB8",
+          "#text": "https://github.com/TheMathGeek314/LegacyRando/releases/download/v1.0.1.0/LegacyRando.zip"
         },
         "Dependencies": {
           "Dependency": [
@@ -1453,10 +1823,10 @@
       {
         "Name": "EverySceneUtil",
         "Description": "A developer tool for running code on every scene in the game",
-        "Version": "1.2.0.0",
+        "Version": "1.3.0.0",
         "Link": {
-          "@SHA256": "FB530E8CB9680258D87D24C3B41E75D9B47344BE70D382FEBFAF2D56C9F830A2",
-          "#text": "https://github.com/TheMathGeek314/EverySceneUtil/releases/download/v1.2.0.0/EverySceneUtil.zip"
+          "@SHA256": "8C4010DC8142A8B2C4187B2ADDD593EC3DF3EF639F25426F6501F0B7F456D531",
+          "#text": "https://github.com/TheMathGeek314/EverySceneUtil/releases/download/v1.3.0.0/EverySceneUtil.zip"
         },
         "Dependencies": null,
         "Repository": "https://github.com/TheMathGeek314/EverySceneUtil/",
@@ -1497,10 +1867,10 @@
       {
         "Name": "TheRealTransitionRando",
         "Description": "A Randomizer connection that puts transitions into the same pool as the other items",
-        "Version": "1.1.1.0",
+        "Version": "1.1.2.0",
         "Link": {
-          "@SHA256": "33921757FE6EF549E007C722E26F8DFC5AE958FACBF4A30000886A5A69DA3F08",
-          "#text": "https://github.com/TheMathGeek314/TheRealTransitionRando/releases/download/v1.1.1.0/TheRealTransitionRando.zip"
+          "@SHA256": "CEC45DABFB1D24F0C9291EDEDEAA18284CDE307F8CA41D3D98BE431563943C34",
+          "#text": "https://github.com/TheMathGeek314/TheRealTransitionRando/releases/download/v1.1.2.0/TheRealTransitionRando.zip"
         },
         "Dependencies": {
           "Dependency": [
@@ -1515,12 +1885,12 @@
         "Integrations": {
           "Integration": [
             "BugPrince",
+            "ConnectionSettingsRando",
             "ItemSync",
             "RandoMapCore",
             "RandoSettingsManager",
             "RecentItemsDisplay",
-            "Scattered and Lost",
-            "ConnectionSettingsRando"
+            "Scattered and Lost"
           ]
         },
         "Authors": {
@@ -1600,10 +1970,10 @@
       {
         "Name": "MoreStags",
         "Description": "A Randomizer connection which adds new stag stations",
-        "Version": "1.1.2.2",
+        "Version": "1.1.2.8",
         "Link": {
-          "@SHA256": "B02AC56A41C66EB586015B01E7FDA50C55DECF14A709A327FC4356D476C3F753",
-          "#text": "https://github.com/TheMathGeek314/MoreStags/releases/download/v1.1.2.2/MoreStags.zip"
+          "@SHA256": "CAF0BE52A21F315093E0F54721AF116095601A451BC197AEAC307041FB6C801B",
+          "#text": "https://github.com/TheMathGeek314/MoreStags/releases/download/v1.1.2.8/MoreStags.zip"
         },
         "Dependencies": {
           "Dependency": [
@@ -1697,10 +2067,10 @@
       {
         "Name": "GeoRando",
         "Description": "A Randomizer connection for every individual piece of geo",
-        "Version": "1.0.3.0",
+        "Version": "1.0.3.1",
         "Link": {
-          "@SHA256": "2AE032A1E76116D3AC158F973B15AEA36E28A3BBA5DCF6CA9F774BC482537275",
-          "#text": "https://github.com/TheMathGeek314/GeoRando/releases/download/v1.0.3.0/GeoRando.zip"
+          "@SHA256": "320C1BEDBF6D75983A90A30229A457BBD73D97F85DF25EE5BDDA5F795FE54360",
+          "#text": "https://github.com/TheMathGeek314/GeoRando/releases/download/v1.0.3.1/GeoRando.zip"
         },
         "Dependencies": {
           "Dependency": [
@@ -1828,10 +2198,10 @@
       {
         "Name": "VendorRando",
         "Description": "A Randomizer add-on that randomizes the physical locations of vendors",
-        "Version": "1.1.4.1",
+        "Version": "1.1.5.0",
         "Link": {
-          "@SHA256": "0571BB841DC5D84F8D2E542C6F1DBEEB81B308A0BE4A06F6DBD7D41BDF2B055B",
-          "#text": "https://github.com/TheMathGeek314/VendorRando/releases/download/v1.1.4.1/VendorRando.zip"
+          "@SHA256": "9397C0FEF8F4489E69E243833C35102C0ACAC4A6853547D2E5F18CE9482E49D1",
+          "#text": "https://github.com/TheMathGeek314/VendorRando/releases/download/v1.1.5.0/VendorRando.zip"
         },
         "Dependencies": {
           "Dependency": [
@@ -1935,10 +2305,10 @@
       {
         "Name": "ShuffledCharmEffects",
         "Description": "Equipped charms will have randomized effects",
-        "Version": "1.1.0.0",
+        "Version": "1.1.0.1",
         "Link": {
-          "@SHA256": "F9BFB81724F5BC48E2BA705D24B7BAC9D34B0B6144D16C2734F94358F80F9805",
-          "#text": "https://github.com/TheMathGeek314/ShuffledCharmEffects/releases/download/v1.1.0.0/ShuffledCharmEffects.zip"
+          "@SHA256": "8BEC028DA2AA6C1D49A1494CA1359554A9A80253AE3D289C0DDC327D88A2ADEC",
+          "#text": "https://github.com/TheMathGeek314/ShuffledCharmEffects/releases/download/v1.1.0.1/ShuffledCharmEffects.zip"
         },
         "Dependencies": {
           "Dependency": "Satchel"
@@ -2175,10 +2545,10 @@
       {
         "Name": "BingoGoalPack2",
         "Description": "Adds more granular specifications for custom BingoSync challenges",
-        "Version": "1.1.0.0",
+        "Version": "1.2.0.0",
         "Link": {
-          "@SHA256": "1761076D667D9A4128ABF9DDB5EAC8BA90D4F3B763D4748C828E2AA0A5D573B8",
-          "#text": "https://github.com/TheMathGeek314/BingoGoalPack2/releases/download/v1.1.0.0/BingoGoalPack2.zip"
+          "@SHA256": "5886A4CEF9926DC683FEC4BB9A18B912C92714A29F55AEE63E9A84E3CA6CF38C",
+          "#text": "https://github.com/TheMathGeek314/BingoGoalPack2/releases/download/v1.2.0.0/BingoGoalPack2.zip"
         },
         "Dependencies": {
           "Dependency": "BingoSync"
@@ -2467,10 +2837,10 @@
       {
         "Name": "BingoGoalPack1",
         "Description": "Adds more goals to BingoSync and includes new board types",
-        "Version": "1.6.0.0",
+        "Version": "1.7.0.0",
         "Link": {
-          "@SHA256": "AD7131E1F7FBB8DFF4583ECD09AF880EF3B673B0E16EDA778015D66227A58AC3",
-          "#text": "https://github.com/TheMathGeek314/BingoGoalPack1/releases/download/v1.6.0.0/BingoGoalPack1.zip"
+          "@SHA256": "9FF7EC88396B5CC2DE4BF6AD1843FD7724F21373BE8C2DBB732E24FCC7BEFE34",
+          "#text": "https://github.com/TheMathGeek314/BingoGoalPack1/releases/download/v1.7.0.0/BingoGoalPack1.zip"
         },
         "Dependencies": {
           "Dependency": [
@@ -3428,10 +3798,10 @@
       {
         "Name": "QoL",
         "Description": "A collection of various quality of life improvements.",
-        "Version": "4.9.0.0",
+        "Version": "4.10.0.0",
         "Link": {
-          "@SHA256": "AE6DDF273249ED7EF75E26A5257CC2D7DE3F790230B1EAA8A57677161A65F0AC",
-          "#text": "https://github.com/fifty-six/HollowKnight.QoL/releases/download/v4.9/QoL.zip"
+          "@SHA256": "B0145B8484A5A3FC462CD93E5D4DD36A3D975AA1F7814828DE4387028225F908",
+          "#text": "https://github.com/fifty-six/HollowKnight.QoL/releases/download/v4.10/QoL.zip"
         },
         "Dependencies": {
           "Dependency": "Vasi"
@@ -7910,7 +8280,10 @@
           "#text": "https://github.com/ygsbzr/PathOfPureVessel/releases/download/v1.0/PathOfPureVessel.zip"
         },
         "Dependencies": {
-          "Dependency": "Satchel"
+          "Dependency": [
+            "HKTool",
+            "Satchel"
+          ]
         },
         "Repository": "https://github.com/ygsbzr/PathOfPureVessel/",
         "Tags": {
@@ -8326,7 +8699,7 @@
             "Satchel"
           ]
         },
-        "Repository": "https://github.com/Korzer420/TheHuntIsOn",
+        "Repository": "https://github.com/dplochcoder/TheHuntIsOn",
         "Tags": {
           "Tag": "Gameplay"
         },
@@ -8382,10 +8755,10 @@
       {
         "Name": "BugPrince",
         "Description": "A Randomizer 4 connection which combines Blue Prince mechanics with Hollow Knight transition randomizer.",
-        "Version": "1.5.3.0",
+        "Version": "1.5.4.0",
         "Link": {
-          "@SHA256": "a7ca29532294cd054a91908c657a0e8826fbc0ff915ccf5e9c853768d15e1906",
-          "#text": "https://github.com/dplochcoder/HollowKnight.BugPrince/releases/download/v1.5.3.0/BugPrince.zip"
+          "@SHA256": "6dbce68f1d5742ad5bb5356051104f94215167ba0bb5ad85b15c00dfdc598998",
+          "#text": "https://github.com/dplochcoder/HollowKnight.BugPrince/releases/download/v1.5.4.0/BugPrince.zip"
         },
         "Dependencies": {
           "Dependency": [
@@ -8416,10 +8789,10 @@
       {
         "Name": "DarknessRandomizer",
         "Description": "A Rando 4 connection to randomize the dark corners of Hallownest.",
-        "Version": "1.5.2.0",
+        "Version": "1.5.3.0",
         "Link": {
-          "@SHA256": "cb39db950dfb7760511cf88a9c06fa2329e43339e18353656ca37e308c7f4c5a",
-          "#text": "https://github.com/dplochcoder/HollowKnight.DarknessRandomizer/releases/download/v1.5.2.0/DarknessRandomizer.zip"
+          "@SHA256": "9267b012230b3c59f8a7c2432cdcecad73c6391afe9ea0bc154fe25055a6b758",
+          "#text": "https://github.com/dplochcoder/HollowKnight.DarknessRandomizer/releases/download/v1.5.3.0/DarknessRandomizer.zip"
         },
         "Dependencies": {
           "Dependency": [
@@ -8469,10 +8842,10 @@
       {
         "Name": "Knight of Nights",
         "Description": "A mod for the Holloween 2025 plando, with some rando integration.",
-        "Version": "2.0.8.0",
+        "Version": "2.0.10.0",
         "Link": {
-          "@SHA256": "f746e29206287d06f39b42f2bb4c29f2721e698d8c69285f36491967c61dfeeb",
-          "#text": "https://github.com/dplochcoder/HollowKnight.KnightOfNights/releases/download/v2.0.8.0/KnightOfNights.zip"
+          "@SHA256": "90d4d2f02513d88d9f06151dbd9a59c2f9156c5cb615634acf1314690cd7000a",
+          "#text": "https://github.com/dplochcoder/HollowKnight.KnightOfNights/releases/download/v2.0.10.0/Knight.of.Nights.zip"
         },
         "Dependencies": {
           "Dependency": [
@@ -8504,10 +8877,10 @@
       {
         "Name": "MoreDoors",
         "Description": "A Rando 4 connection which adds more locked doors to Hallownest.",
-        "Version": "3.4.2.0",
+        "Version": "3.4.3.0",
         "Link": {
-          "@SHA256": "26d3d861b39d04bdb5e324a5859cc82f0d6c41522e85d762ad0c844117f17a0e",
-          "#text": "https://github.com/dplochcoder/HollowKnight.MoreDoors/releases/download/v3.4.2.0/MoreDoors.zip"
+          "@SHA256": "66d19cb7002b500a47012f00f79efb35545dc21e797cc5712ef3cb6f7838b3ee",
+          "#text": "https://github.com/dplochcoder/HollowKnight.MoreDoors/releases/download/v3.4.3.0/MoreDoors.zip"
         },
         "Dependencies": {
           "Dependency": [
@@ -8537,10 +8910,10 @@
       {
         "Name": "PurenailCore",
         "Description": "Common utilities and interop for Purenail mods",
-        "Version": "2.1.1.0",
+        "Version": "2.2.1.0",
         "Link": {
-          "@SHA256": "631dcebd371253e83cebd0b41e90ca596fad523625e5b98ac66a39ffb0d842fe",
-          "#text": "https://github.com/dplochcoder/HollowKnight.PurenailCore/releases/download/v2.1.1.0/PurenailCore.zip"
+          "@SHA256": "ebe50b2a3f77328af686509822bd002729c9df80cab9f2404bdaadf5c0947831",
+          "#text": "https://github.com/dplochcoder/HollowKnight.PurenailCore/releases/download/v2.2.1.0/PurenailCore.zip"
         },
         "Dependencies": {
           "Dependency": [
@@ -8548,15 +8921,18 @@
             "Randomizer 4"
           ]
         },
-        "Repository": "https://github.com/dplochcoder/HollowKnight.PurenailCore"
+        "Repository": "https://github.com/dplochcoder/HollowKnight.PurenailCore",
+        "Authors": {
+          "Author": "Purenail"
+        }
       },
       {
         "Name": "Scattered and Lost",
         "Description": "Celeste-themed content mod, expanding Bretta's hut",
-        "Version": "1.6.6.0",
+        "Version": "1.6.7.0",
         "Link": {
-          "@SHA256": "792f81e27d30f74df5cb87ee8b59e09fb5bff20dc97251a054588f1e3f210a78",
-          "#text": "https://github.com/dplochcoder/HollowKnight.ScatteredAndLost/releases/download/v1.6.6.0/Scattered.and.Lost.zip"
+          "@SHA256": "36e135b964f11f429933fdf5838bb994c1688de3524da338e9330d88d5a2ec45",
+          "#text": "https://github.com/dplochcoder/HollowKnight.ScatteredAndLost/releases/download/v1.6.7.0/Scattered.and.Lost.zip"
         },
         "Dependencies": {
           "Dependency": [
@@ -8641,10 +9017,10 @@
       {
         "Name": "SpoilerViewerMod",
         "Description": "Provides a Java GUI for navigating the spoiler log of randos or plandos. Requires Java to be installed.",
-        "Version": "2.13.0.0",
+        "Version": "2.13.1.0",
         "Link": {
-          "@SHA256": "5b1e276ed3affd88126f4847a96ea81359179252f586a1174cfd5dee949c2e8c",
-          "#text": "https://github.com/dplochcoder/hkspoilerviewer/releases/download/v2.13.0/SpoilerViewerMod.zip"
+          "@SHA256": "a6d987c43f9ccfcd1ee8dbac4123d79fa18981d24619d5e19dfd1e973a7c0adc",
+          "#text": "https://github.com/dplochcoder/hkspoilerviewer/releases/download/v2.13.1.0/SpoilerViewerMod.zip"
         },
         "Dependencies": {
           "Dependency": [
@@ -8667,10 +9043,10 @@
       {
         "Name": "TreasureHunt",
         "Description": "A Randomizer 4 connection fro a semi-spoiler format.",
-        "Version": "1.7.3.0",
+        "Version": "1.7.4.0",
         "Link": {
-          "@SHA256": "4015ee3c26d8f9c459a0dac078b9f4cede7542a89c6c6906b7eedc8ee7e2fc63",
-          "#text": "https://github.com/dplochcoder/HollowKnight.TreasureHunt/releases/download/v1.7.3.0/TreasureHunt.zip"
+          "@SHA256": "3249585cfa8b56716b29d4303b9345ff4fcb688260687cf5a27ebc6f8415269d",
+          "#text": "https://github.com/dplochcoder/HollowKnight.TreasureHunt/releases/download/v1.7.4.0/TreasureHunt.zip"
         },
         "Dependencies": {
           "Dependency": [
@@ -8728,10 +9104,10 @@
       {
         "Name": "MapChanger",
         "Description": "A library for map mods.",
-        "Version": "1.3.11.0",
+        "Version": "1.3.12.0",
         "Link": {
-          "@SHA256": "0EC9097AE010CCBC68304BD337F133099DB79DA4BE58737B863E488726C0911D",
-          "#text": "https://github.com/syyePhenomenol/MapChanger/releases/download/v1.3.11/MapChanger.zip"
+          "@SHA256": "A01A05560D46F680ADDEA289BA7A0ECCCF3B5E026D60090CFE97E81333E928A1",
+          "#text": "https://github.com/syyePhenomenol/MapChanger/releases/download/v1.3.12/MapChanger.zip"
         },
         "Dependencies": {
           "Dependency": [
@@ -8757,10 +9133,10 @@
       {
         "Name": "RandoMapMod",
         "Description": "A Randomizer 4 overhaul of the World Map to help find item and transition checks.",
-        "Version": "3.6.8.0",
+        "Version": "3.6.9.0",
         "Link": {
-          "@SHA256": "E373C31A35755608AC282934E1CB603D194E72BB23B4C39BC9EF0617C30573FA",
-          "#text": "https://github.com/syyePhenomenol/RandoMapMod/releases/download/v3.6.8/RandoMapMod.zip"
+          "@SHA256": "CCE0AA749672B509F094034A59ECF7C512401B185090E18F15517DDFA00B926E",
+          "#text": "https://github.com/syyePhenomenol/RandoMapMod/releases/download/v3.6.9/RandoMapMod.zip"
         },
         "Dependencies": {
           "Dependency": [
@@ -9434,10 +9810,10 @@
       {
         "Name": "BingoSync",
         "Description": "A Hollow Knight mod that automatically marks squares on bingosync.com",
-        "Version": "1.4.5.5",
+        "Version": "1.6.2.3",
         "Link": {
-          "@SHA256": "4E9B6228EEA32181C176FC1A131496BD54D247E1ED3A8CCC8466392CAE3ED332",
-          "#text": "https://github.com/pedroteosousa/HollowKnight.BingoSync/releases/download/1.4.5.5/BingoSync.zip"
+          "@SHA256": "AE7D3CAD67AC05F3E33FD43AF2A21495099C8FEE26A254FB83C48E0EC8F1CD95",
+          "#text": "https://github.com/pedroteosousa/HollowKnight.BingoSync/releases/download/1.6.2.3/BingoSync.zip"
         },
         "Dependencies": {
           "Dependency": [
@@ -9457,10 +9833,10 @@
       {
         "Name": "BingoAdvancedCustomGeneration",
         "Description": "A mod allowing for more complex board generation using BingoSync",
-        "Version": "1.1.1.0",
+        "Version": "1.2.1.2",
         "Link": {
-          "@SHA256": "F3E197241B3D885AA6A661A90CCE323498819D80698191C6EB991846840090A7",
-          "#text": "https://github.com/TheRealAlph4/HollowKnight.BingoAdvancedCustomGeneration/releases/download/v1.1.1.0/BingoAdvancedCustomGeneration.zip"
+          "@SHA256": "160C883EDBE7295D9A09D7EFDBB22006208FDA74151CF254DC7B0292A7EFF7F2",
+          "#text": "https://github.com/TheRealAlph4/HollowKnight.BingoAdvancedCustomGeneration/releases/download/v1.2.1.2/BingoAdvancedCustomGeneration.zip"
         },
         "Dependencies": {
           "Dependency": "BingoSync"
@@ -9473,10 +9849,10 @@
       {
         "Name": "BingoGoalPackGrubDay",
         "Description": "A goal pack that adds automarking for 6 new goals for the 2026 Grub Day bingy events",
-        "Version": "1.0.0.0",
+        "Version": "1.1.0.0",
         "Link": {
-          "@SHA256": "AC654D9A52FF366842103B2687936672A7615C8203A6F32EFC4351BFFCDBADE2",
-          "#text": "https://github.com/TheRealAlph4/HollowKnight.BingoGoalPackGrubDay/releases/download/v1.0.0.0/BingoGoalPackGrubDay.zip"
+          "@SHA256": "228AFAB8322350CDD6FEAA6A829036CCFC9826348DC4CD0736D752A7150A11B1",
+          "#text": "https://github.com/TheRealAlph4/HollowKnight.BingoGoalPackGrubDay/releases/download/v1.1.0.0/BingoGoalPackGrubDay.zip"
         },
         "Dependencies": {
           "Dependency": [
@@ -10921,15 +11297,18 @@
       {
         "Name": "ReplayLogger",
         "Description": "ReplayLoger is a mod that was created to verify the legitimacy of player challenge runs.",
-        "Version": "1.1.0.6",
+        "Version": "2.0.0.2",
         "Link": {
-          "@SHA256": "29ed3e8c93b8150751b7b8d2b7c4df6e309a13450152199408940bc5b77727ac",
-          "#text": "https://github.com/NightFuryoOo/ReplayLogger/releases/download/v1.1.0.6/ReplayLogger.zip"
+          "@SHA256": "557e6e9553bbfbac686bdb67c61f5052ba38b0ce483138c122d144a8159c0a44",
+          "#text": "https://github.com/NightFuryoOo/ReplayLogger/releases/download/v2.0.0.2/ReplayLogger.zip"
         },
         "Dependencies": {
           "Dependency": "Satchel"
         },
         "Repository": "https://github.com/NightFuryoOo/ReplayLogger",
+        "Tags": {
+          "Tag": "LLM-Assisted"
+        },
         "Authors": {
           "Author": [
             "NightFuryo3o",
@@ -10942,10 +11321,10 @@
       {
         "Name": "GodhomeQoL",
         "Description": "This mod is a large collection of tools designed to help challenge runners with their tasks.",
-        "Version": "1.0.1.3",
+        "Version": "2.1.0.0",
         "Link": {
-          "@SHA256": "a5fc55e3987251b66eec364bfb053be34826b4ab1801b98b1cace4e1a9fdab45",
-          "#text": "https://github.com/NightFuryoOo/GodhomeQoL/releases/download/v1.0.1.3/GodhomeQoL.zip"
+          "@SHA256": "1cda8026dce1eacb11711678869ffb0c86f7febdbddeedc137bc2be22d2adf74",
+          "#text": "https://github.com/NightFuryoOo/GodhomeQoL/releases/download/v2.1.0.0/GodhomeQoL.zip"
         },
         "Dependencies": {
           "Dependency": [
@@ -10967,10 +11346,10 @@
       {
         "Name": "HKBattle",
         "Description": "HKBattle is a Hollow Knight mod for solo practice and competitive boss and Pantheon challenges.",
-        "Version": "1.0.0.3",
+        "Version": "1.0.0.4",
         "Link": {
-          "@SHA256": "cd361771daaacb00f6cbc8744298a76015f78349ea9ac2b2effde25531ded0c6",
-          "#text": "https://github.com/NightFuryoOo/HKBattle/releases/download/v1.0.0.3/HKBattle.zip"
+          "@SHA256": "061cbb74b8a0b2598ffe94c0c885aa8963cb5d77fa0163fe3153cf83db34c2f4",
+          "#text": "https://github.com/NightFuryoOo/HKBattle/releases/download/v1.0.0.4/HKBattle.zip"
         },
         "Dependencies": null,
         "Repository": "https://github.com/NightFuryoOo/HKBattle",
@@ -11058,10 +11437,10 @@
       {
         "Name": "RandoMapCore",
         "Description": "A library for RandoMapMod and ArchipelagoMapMod.",
-        "Version": "1.0.19.0",
+        "Version": "1.0.20.0",
         "Link": {
-          "@SHA256": "C8CAEC5FD204DB61006366C6B01478B91B2163090394CF2D56A7801AC44A5C73",
-          "#text": "https://github.com/syyePhenomenol/RandoMapCore/releases/download/v1.0.19/RandoMapCore.zip"
+          "@SHA256": "FD4695A0641F3167AB27FACDA9D5D19C3F16361D849AB2BA96158401127A010C",
+          "#text": "https://github.com/syyePhenomenol/RandoMapCore/releases/download/v1.0.20/RandoMapCore.zip"
         },
         "Dependencies": {
           "Dependency": [
@@ -11294,10 +11673,10 @@
       {
         "Name": "Architect",
         "Description": "A Hollow Knight level editor mod, easily make and share custom levels with an in-game level editor and level sharer.",
-        "Version": "3.35.0.0",
+        "Version": "3.40.2.1",
         "Link": {
-          "@SHA256": "ad473ae2b6621d8053f56cfd3eec7a881e643ad1208064b63d554170b8f02e87",
-          "#text": "https://github.com/cometcake575/Architect-HK/releases/download/3.35.0.0/Architect.zip"
+          "@SHA256": "a59e060e32a9ffff7d42aae0ac856a7b941436d9d997525bea25d7849f8330fc",
+          "#text": "https://github.com/cometcake575/Architect-HK/releases/download/3.40.2.1/Architect.zip"
         },
         "Dependencies": {
           "Dependency": [
@@ -11353,6 +11732,24 @@
         "Issues": "https://github.com/cometcake575/FSMSeer-HK/issues",
         "Tags": {
           "Tag": "Utility"
+        },
+        "Authors": {
+          "Author": "cometcake575"
+        }
+      },
+      {
+        "Name": "FasterAnimators",
+        "Description": "Increases the speed of Animator objects, making some hazards faster",
+        "Version": "1.0.0.0",
+        "Link": {
+          "@SHA256": "bd2319a2ee914d1a88d2b31db29d29c93a71c6d2c84787bd0e93280ed0071a70",
+          "#text": "https://github.com/cometcake575/FasterAnimators/releases/download/1.0.0.0/FasterAnimators.zip"
+        },
+        "Dependencies": null,
+        "Repository": "https://github.com/cometcake575/FasterAnimators",
+        "Issues": "https://github.com/cometcake575/FasterAnimators/issues",
+        "Tags": {
+          "Tag": "Gameplay"
         },
         "Authors": {
           "Author": "cometcake575"
@@ -11437,11 +11834,11 @@
       },
       {
         "Name": "CustomizableAbilities",
-        "Description": "Mod that allows you to customize abilities: negative and fractional nail; the amount of SOUL received from nail hits; nail cooldown; damage (also negative and fractional) and the amount of SOUL received from dream nail; spells and other abilities. Negative damage heals enemies.",
-        "Version": "1.3.4.1",
+        "Description": "Mod that allows you to change the abilities: positive, negative and fractional nail damage; nail cooldown; amount of SOUL gained from nail hits; dream nail damage and SOUL gain; spells damage; crystal dash damage; focus cost and focus time. Negative damage heals enemies.",
+        "Version": "1.5.0.1",
         "Link": {
-          "@SHA256": "ce975c343efc70596115ef0c3f3da7254e6f4fc272f521699aec0b37697adb5e",
-          "#text": "https://github.com/kon4ino/CustomizableAbilities/releases/download/1.3.4.1/CustomizableNailDamage.zip"
+          "@SHA256": "6951d17a3b07d92de8618cae6a0263ac5b9ef550a8a12e3b246814074b54c270",
+          "#text": "https://github.com/kon4ino/CustomizableAbilities/releases/download/1.5.0.1/CustomizableNailDamage.zip"
         },
         "Dependencies": {
           "Dependency": [
@@ -11530,11 +11927,11 @@
       },
       {
         "Name": "PlatformingQoL",
-        "Description": "Quality of life improvements for Hollow Knight platforming, including hitbox visualization and respawn animation skipping.",
-        "Version": "1.2.0.0",
+        "Description": "Quality of life improvements for Hollow Knight platforming, including better hitbox visualization and respawn animation skipping.",
+        "Version": "1.3.0.0",
         "Link": {
-          "@SHA256": "323cf9dd9e70eb452b7ae0f518e6998fcd8572debc23fb2c8e1d76d762849084",
-          "#text": "https://github.com/Ishmael-GameDev/Platforming-QoL-mod/releases/download/PlatformingQoL-v1.2.0/Platforming.QoL.zip"
+          "@SHA256": "6c1046297503fd639399522da579694ab2f890569e3f27f1abc04c1bdf32143e",
+          "#text": "https://github.com/Ishmael-GameDev/Platforming-QoL-mod/releases/download/v3/PlatformingQoL.dll"
         },
         "Dependencies": null,
         "Repository": "https://github.com/Ishmael-GameDev/Platforming-QoL-mod",
@@ -11570,7 +11967,7 @@
       },
       {
         "Name": "OWO_HollowKnight",
-        "Description": "A mod that allows the integration of OWO Skin haptic device with HK",
+        "Description": "[STEAM ONLY] A mod that allows the integration of OWO Skin haptic device with HK",
         "Version": "1.0.0.0",
         "Link": {
           "@SHA256": "c40041b5733d3fce3f54cbbfddad63075b34999edebe550aa0970194de9ebe96",
@@ -11661,10 +12058,10 @@
       {
         "Name": "Pale Court Charms",
         "Description": "Adds charms from Pale Court. Made to allow compatibility with mods that don't work with the main Pale Court. Works with Randomizer and Transcendence.\n        Do not use with Pale Court,as both mods add the same charms.",
-        "Version": "1.4.0.0",
+        "Version": "1.4.1.0",
         "Link": {
-          "@SHA256": "3d877111f06a8febae07b72d582856b5d39234bbe2618df76f7eb9c9e770f684",
-          "#text": "https://github.com/Roma-337/PaleCourtCharms/releases/download/v1.4.0/PaleCourtCharms.zip"
+          "@SHA256": "0218d143fb89df88afb21548fab6db382a5bcf6289cde724d9e7b1f3e5837aa8",
+          "#text": "https://github.com/Roma-337/PaleCourtCharms/releases/download/v1.4.1/PaleCourtCharms.zip"
         },
         "Dependencies": {
           "Dependency": [
@@ -12614,10 +13011,10 @@
       {
         "Name": "MendBreakables",
         "Description": "Repairs certain breakable objects",
-        "Version": "1.0.0.0",
+        "Version": "1.0.1.0",
         "Link": {
-          "@SHA256": "87d1abed4c3d9f033dd71534182dbff2bb828780f370a790e76dfe6f0c03fc90",
-          "#text": "https://github.com/danielstegink/HollowKnight.MendBreakables/releases/download/1.0.0.0/MendBreakables.zip"
+          "@SHA256": "5C4C95EE414F7C99F73FB3EE44E457F31DA97942F9AFF381787D02E40FEDC566",
+          "#text": "https://github.com/danielstegink/HollowKnight.MendBreakables/releases/download/1.0.1.0/MendBreakables.zip"
         },
         "Dependencies": {
           "Dependency": "Satchel"
@@ -12773,10 +13170,10 @@
         "Name": "Charm Rebalanced",
         "DisplayName": "Charm Rebalanced Mod",
         "Description": "Click [View Readme] to see all the changes. If you enjoy the mod, please consider giving the GitHub repository a star, this will help spread the mod to more people!",
-        "Version": "3.0.6.0",
+        "Version": "3.0.7.0",
         "Link": {
-          "@SHA256": "cd9c8b928c8dd57d8432072c6701738f9f215359eab87f41efe441d630fb22cf",
-          "#text": "https://github.com/GyVn87/Charm-Rebalanced-Mod/releases/download/v3.0.6.0/CharmRebalanced.zip"
+          "@SHA256": "15c78ed5d2a4a49d2badb58be2d749fb2464cebbe3edad04ec29f3c08dcfccb0",
+          "#text": "https://github.com/GyVn87/Charm-Rebalanced-Mod/releases/download/v3.0.7.0/CharmRebalanced.zip"
         },
         "Dependencies": {
           "Dependency": "SFCore"
@@ -12844,20 +13241,20 @@
       },
       {
         "Name": "Ghost Macro",
-        "Description": "Scene-based hitbox recording and replay system with timeline playback, multi-visit support, and macro-like ghost replays",
-        "Version": "1.0.0.0",
+        "Description": "Scene-based character recording and replay system with timeline playback, multi-visit support, and macro-like ghost replays",
+        "Version": "2.0.0.0",
         "Link": {
-          "@SHA256": "7ab6653de492767c8b9807607ce0afa93fde3f83fd21df31fb8dbf8f5ccd71fd",
-          "#text": "https://github.com/Ishmael-GameDev/Ghost-Macro/releases/download/v1/Ghost.Macro.dll"
+          "@SHA256": "08bb6fd32aa4082ab24aa67637bc2ac7ffb3926bfcb7445637cc55b841163f47",
+          "#text": "https://github.com/Ishmael-GameDev/Ghost-Macro/releases/download/v2/Ghost.Macro.dll"
         },
         "Dependencies": {
-          "Dependency": [
-            "Satchel",
-            "MagicUI",
-            "DebugMod"
-          ]
+          "Dependency": "Satchel"
         },
         "Repository": "https://github.com/Ishmael-GameDev/Ghost-Macro",
+        "ReadMe": "https://github.com/Ishmael-GameDev/Ghost-Macro/blob/main/ReadMe.md",
+        "Integrations": {
+          "Integration": "Custom Knight"
+        },
         "Tags": {
           "Tag": "Gameplay"
         },
@@ -12887,15 +13284,16 @@
       {
         "Name": "RespawnPoint Manager",
         "Description": "Spawnpoint manager that tracks, saves, render and switches player checkpoints across scenes with quick reset, preset system and custom spawn control",
-        "Version": "1.3.0.0",
+        "Version": "1.4.0.0",
         "Link": {
-          "@SHA256": "01ca59e9f54de1c9c23385db23c1a96edfb8fbf01a371450719cc297734fa5f4",
-          "#text": "https://github.com/Ishmael-GameDev/Respawn-Point-Manager/releases/download/v3/RespawnPointManager.dll"
+          "@SHA256": "db9f0f32701d998c637b9857c8ce58473bd5f1b5aaeac7b710f467baf9a0253e",
+          "#text": "https://github.com/Ishmael-GameDev/Respawn-Point-Manager/releases/download/v4/RespawnPointManager.dll"
         },
         "Dependencies": {
           "Dependency": "Satchel"
         },
         "Repository": "https://github.com/Ishmael-GameDev/Respawn-Point-Manager",
+        "ReadMe": "https://github.com/Ishmael-GameDev/Respawn-Point-Manager/blob/main/ReadMe.md",
         "Tags": {
           "Tag": "Utility"
         },
@@ -12980,10 +13378,10 @@
       {
         "Name": "Another Location",
         "Description": "Adds one location to the Randomizer. Terms and Conditions may apply",
-        "Version": "1.0.0.0",
+        "Version": "1.0.0.1",
         "Link": {
-          "@SHA256": "c0e58d784014e470fc3a93f89bfe61a2ec1ce0d85c9d2ada46f2cb68143398c2",
-          "#text": "https://github.com/Roma-337/AnotherLocation/releases/download/v1.0.0.0/AnotherLocation.zip"
+          "@SHA256": "cbaef0e21c93b5d2771c6b2f1e42dee143da0bba5a8f5e8f57ebd09ee64fbf36",
+          "#text": "https://github.com/Roma-337/AnotherLocation/releases/download/v1.0.0.1/AnotherLocation.zip"
         },
         "Dependencies": {
           "Dependency": "Randomizer 4"
@@ -13091,11 +13489,11 @@
       },
       {
         "Name": "Teleport Master",
-        "Description": "Highlights rooms tracked by DecorationMaster/Architect and teleport there instantly, supports Full Map mode, and plays nicely with Additional Maps.",
-        "Version": "1.0.0.0",
+        "Description": "Teleport to any room by clicking it on the map, highlight rooms with DecorationMaster/Architect decorations or a custom palette, and use Full Map mode with Additional Maps support. With HKMP, the host can disable teleport or take away maps for all players.",
+        "Version": "1.5.0.0",
         "Link": {
-          "@SHA256": "d79ecf1f55b55a95d8d5c1e4385b4dd6233669a9e5be52225c231742e7eec35b",
-          "#text": "https://github.com/Ishmael-GameDev/Teleport-Master/releases/download/v1/TeleportMaster.dll"
+          "@SHA256": "dd2a1b08d61463b815b4bbd9453e9a63ca497459f1b75d58ec94307051dfcdce",
+          "#text": "https://github.com/Ishmael-GameDev/Teleport-Master/releases/download/v1.5/TeleportMaster.dll"
         },
         "Dependencies": {
           "Dependency": [
@@ -13106,15 +13504,20 @@
           ]
         },
         "Repository": "https://github.com/Ishmael-GameDev/Teleport-Master",
+        "ReadMe": "https://github.com/Ishmael-GameDev/Teleport-Master/blob/main/ReadMe.md",
         "Integrations": {
           "Integration": [
             "DecorationMaster",
             "ArchitectLegacy",
-            "Architect"
+            "Architect",
+            "HKMP"
           ]
         },
         "Tags": {
-          "Tag": "Utility"
+          "Tag": [
+            "Gameplay",
+            "Utility"
+          ]
         },
         "Authors": {
           "Author": "Ishmael"
@@ -13122,19 +13525,22 @@
       },
       {
         "Name": "GlobalList Atlas",
-        "Description": "Connects to the community's global spreadsheet archive of fan-made rated maps. Browse and filter maps by editor, tags, rating and verification status, then download, install, and launch them directly from an in-game menu — including required editors and public mods.",
-        "Version": "1.0.0.0",
+        "Description": "Connects to the community's global spreadsheet archive of fan-made rated maps and the public Architect server catalog. Browse and filter maps by editor, tags, rating, verification status and league, then download, install and launch them from an in-game menu, including required editors and public mods.",
+        "Version": "2.6.0.0",
         "Link": {
-          "@SHA256": "da5861f2361c1b051a98d2e0cfe4551b6d7774aac8fe077441864bbac46ff7b8",
-          "#text": "https://github.com/Ishmael-GameDev/GlobalList-Atlas/releases/download/v1/GlobalListAtlas.dll"
+          "@SHA256": "c3206dab1f2069318167df2f9de119ed90ed94841f8e788466664111f14cd291",
+          "#text": "https://github.com/Ishmael-GameDev/GlobalList-Atlas/releases/download/v2.6/GlobalListAtlas.dll"
         },
         "Dependencies": null,
         "Repository": "https://github.com/Ishmael-GameDev/GlobalList-Atlas",
+        "ReadMe": "https://github.com/Ishmael-GameDev/GlobalList-Atlas/blob/main/README.md",
         "Integrations": {
           "Integration": [
             "DecorationMaster",
             "ArchitectLegacy",
-            "Architect"
+            "Architect",
+            "Teleport Master",
+            "HKMP"
           ]
         },
         "Tags": {
@@ -13250,6 +13656,519 @@
         },
         "Authors": {
           "Author": "Ishmael"
+        }
+      },
+      {
+        "Name": "BetterScreenShot",
+        "Description": "Press Print Screen to freeze the game, zoom out up to ×25, and save any area of the room at full resolution to a file or the clipboard.",
+        "Version": "1.0.0.0",
+        "Link": {
+          "@SHA256": "2d22fe7934c69bdcb0cc92f3ad1934fe7acea9c2f5cba94467f24885618498a2",
+          "#text": "https://github.com/Ishmael-GameDev/BetterScreenShot/releases/download/v1/BetterScreenShot.dll"
+        },
+        "Dependencies": null,
+        "Repository": "https://github.com/Ishmael-GameDev/BetterScreenShot",
+        "ReadMe": "https://github.com/Ishmael-GameDev/BetterScreenShot/blob/main/ReadMe.md",
+        "Tags": {
+          "Tag": "Utility"
+        },
+        "Authors": {
+          "Author": "Ishmael"
+        }
+      },
+      {
+        "Name": "HKMP.Rounds",
+        "Description": "An HKMP addon that adds a round-based system, automatic round starts, and PvP win statistics.",
+        "Version": "1.2.0.0",
+        "Link": {
+          "@SHA256": "23b8850e28e21fd33148b8b1df07800a3aabd81a69307af7064f8cf9e7990e0d",
+          "#text": "https://github.com/aristocrat27/HKMP.Rounds/releases/download/1.2.0.0/HKMP.Rounds.zip"
+        },
+        "Dependencies": {
+          "Dependency": "HKMP"
+        },
+        "Repository": "https://github.com/aristocrat27/HKMP.Rounds",
+        "Tags": {
+          "Tag": [
+            "Gameplay",
+            "Utility"
+          ]
+        },
+        "Authors": {
+          "Author": "Aristocrat"
+        }
+      },
+      {
+        "Name": "HKMP.Timer",
+        "Description": "Synchronized timer/stopwatch for Hollow Knight multiplayer through HKMP.",
+        "Version": "1.1.0.0",
+        "Link": {
+          "@SHA256": "530f38ae68d60c3ef01d5913c9afc835e4ce4067c0d7f47a43b78fc68d438ba5",
+          "#text": "https://github.com/aristocrat27/HKMP.Timer/releases/download/1.1.0.0/HKMP.Timer.zip"
+        },
+        "Dependencies": {
+          "Dependency": [
+            "HKMP",
+            "Satchel"
+          ]
+        },
+        "Repository": "https://github.com/aristocrat27/HKMP.Timer",
+        "Tags": {
+          "Tag": [
+            "Accessibility",
+            "Utility"
+          ]
+        },
+        "Authors": {
+          "Author": "Aristocrat"
+        }
+      },
+      {
+        "Name": "OneShot PvP",
+        "Description": "A fast-paced Hollow Knight PvP mod where players fight with 1 HP and limited spell casts.",
+        "Version": "1.0.0.0",
+        "Link": {
+          "@SHA256": "dacd9d0b0fbdd6b149136a440a5131b42f2e2bc278a11b63345114207e349f7b",
+          "#text": "https://github.com/aristocrat27/OneShot-PvP/releases/download/Release/OneShot_PvP.zip"
+        },
+        "Dependencies": {
+          "Dependency": "HKMP"
+        },
+        "Repository": "https://github.com/aristocrat27/OneShot-PvP",
+        "Tags": {
+          "Tag": [
+            "Gameplay",
+            "Utility"
+          ]
+        },
+        "Authors": {
+          "Author": [
+            "Aristocrat",
+            "Bobry Cola"
+          ]
+        }
+      },
+      {
+        "Name": "MusicShuffle",
+        "Description": "Shuffles the soundtrack around randomly.",
+        "Version": "1.0.1.0",
+        "Link": {
+          "@SHA256": "6087ce0199238b9738846c1af1f3f9f9e2d152f26bbe7e876cb0aab755b6601d",
+          "#text": "https://github.com/thoughthouse/HollowKnight.MusicShuffle/releases/download/1.0.2.0/MusicShuffle.zip"
+        },
+        "Dependencies": {
+          "Dependency": [
+            "Osmi",
+            "Satchel"
+          ]
+        },
+        "Repository": "https://github.com/thoughthouse/HollowKnight.MusicShuffle",
+        "Tags": {
+          "Tag": "Cosmetic"
+        }
+      },
+      {
+        "Name": "HollowKnightTAS",
+        "Description": "A TAS toolkit for Hollow Knight with a visual Studio editor, frame-by-frame input editing, recording and replay, timeline branching, MP4 export, and local control for AI agents and scripts. Windows only.",
+        "Version": "0.1.7.0",
+        "Link": {
+          "@SHA256": "af993061af51ef7ed12804704dec0fbf250f06e8a519e395d2dc1a3f243ce58f",
+          "#text": "https://github.com/windplusflower/HollowKnightTASMod/releases/download/v0.1.7/HollowKnightTAS.zip"
+        },
+        "Dependencies": null,
+        "Repository": "https://github.com/windplusflower/HollowKnightTASMod",
+        "ReadMe": "https://raw.githubusercontent.com/windplusflower/HollowKnightTASMod/main/README.en.md",
+        "Issues": "https://github.com/windplusflower/HollowKnightTASMod/issues",
+        "Tags": {
+          "Tag": [
+            "LLM-Assisted",
+            "Utility"
+          ]
+        },
+        "Authors": {
+          "Author": "Windflower"
+        }
+      },
+      {
+        "Name": "VocesDelVacio",
+        "Description": "Mod de doblaje al español latino para Hollow Knight",
+        "Version": "1.0.0.0",
+        "Link": {
+          "@SHA256": "558EE0C1342A7A0AB95FD1E335308110D6466CF0BA6BA7DB4DED597648B6A2D5",
+          "#text": "https://github.com/smartmovil825-beep/VocesdelVacio/releases/download/1.0.0.0/VocesdelVacio.zip"
+        },
+        "Dependencies": {
+          "Dependency": [
+            "Satchel",
+            "Core.FsmUtil",
+            "HKMirror",
+            "SFCore",
+            "FrogCore"
+          ]
+        },
+        "Repository": "https://github.com/smartmovil825-beep/VocesdelVacio",
+        "Tags": {
+          "Tag": "Gameplay"
+        },
+        "Authors": {
+          "Author": "Z-LIVE"
+        }
+      },
+      {
+        "Name": "mahoraga-wheel",
+        "Description": "Hollow Knight mod that replaces the Absolute Radiance halo with mahogara's wheel",
+        "Version": "1.1.0.0",
+        "Link": {
+          "@SHA256": "0a7c7d6028e42d2fffcb3ec92562c3c7fd0ff76de3a7542e42100a56d090ed35",
+          "#text": "https://github.com/OsHK00/mahoraga-halo/releases/download/v1.1.0/mahoraga-halo.zip"
+        },
+        "Dependencies": {
+          "Dependency": [
+            "Satchel",
+            "ModCommon"
+          ]
+        },
+        "Repository": "https://github.com/OsHK00/mahoraga-halo",
+        "Issues": "https://github.com/OsHK00/mahoraga-halo/issues",
+        "Tags": {
+          "Tag": "Cosmetic"
+        },
+        "Authors": {
+          "Author": "OscarHK"
+        }
+      },
+      {
+        "Name": "Hollow Knight Native Rumble — macOS",
+        "DisplayName": "Hollow Knight Native Rumble — macOS",
+        "Description": "Native macOS controller rumble for Hollow Knight 1.5.78.11833. Works through Rosetta. Tested with 8BitDo Ultimate 2. Supports only macOS builds.",
+        "Version": "1.0.0.0",
+        "Link": {
+          "@SHA256": "8093aaf4b64a12127abdc13e127db562dc53b0155cf5f796bd6757c4ff42c87d",
+          "#text": "https://github.com/Last1kkk/hollow-knight-native-rumble/releases/download/v1.0.0/Hollow-Knight-Native-Rumble-v1.0.0.zip"
+        },
+        "Dependencies": null,
+        "Repository": "https://github.com/Last1kkk/hollow-knight-native-rumble",
+        "Issues": "https://github.com/Last1kkk/hollow-knight-native-rumble/issues",
+        "Authors": {
+          "Author": "Last1kkk"
+        }
+      },
+      {
+        "Name": "Hollow Knight 8-Player Co-op",
+        "DisplayName": "Hollow Knight 8-Player Co-op",
+        "Description": "Local co-op for up to 8 players, with independent controls, charms and roles, shared progression, and configurable PvP arenas.",
+        "Version": "0.11.2.0",
+        "Link": {
+          "@SHA256": "62FB936525F5A6A704A3C6854CBFC289C258F3DFD84A0148DEE4732BA9EDCB8A",
+          "#text": "https://github.com/RaulSB-code/HollowKnight-Local8/releases/download/v0.11.2/HollowKnightLocal8-v0.11.2.zip"
+        },
+        "Dependencies": null,
+        "Repository": "https://github.com/RaulSB-code/HollowKnight-Local8",
+        "ReadMe": "https://raw.githubusercontent.com/RaulSB-code/HollowKnight-Local8/main/README.md",
+        "Issues": "https://github.com/RaulSB-code/HollowKnight-Local8/issues",
+        "Integrations": {
+          "Integration": "Custom Knight"
+        },
+        "Tags": {
+          "Tag": [
+            "Gameplay",
+            "LLM-Assisted"
+          ]
+        },
+        "Authors": {
+          "Author": "RaulSB-code"
+        }
+      },
+      {
+        "Name": "Bullshittery",
+        "DisplayName": "Bullshittery",
+        "Description": "Adds probably the most random features you've ever seen, ranging from simple features to jawdropping bullshit",
+        "Version": "1.5.69.5",
+        "Link": {
+          "@SHA256": "e8fc9f3a2ea38ce902b505e22580e7bd767b9b3e18d1a6e979855e4529a9e4f8",
+          "#text": "https://github.com/ChadMcOrgans2022/Bullshittery/releases/download/v1.5.69.5/Bullshittery.1.5.69.5.zip"
+        },
+        "Dependencies": null,
+        "Repository": "https://github.com/ChadMcOrgans2022/Bullshittery",
+        "Issues": "https://github.com/ChadMcOrgans2022/Bullshittery/issues",
+        "Tags": {
+          "Tag": [
+            "Gameplay",
+            "Joke"
+          ]
+        },
+        "Authors": {
+          "Author": "MuffinCakes65"
+        }
+      },
+      {
+        "Name": "HKMP.List",
+        "Description": "An HKMP addon for displaying the player list and managing host settings.",
+        "Version": "1.1.0.0",
+        "Link": {
+          "@SHA256": "7ebc40f079b4784e91b6ca88a5635232397389c3928d78efc60a456ee6fdb2ef",
+          "#text": "https://github.com/aristocrat27/HKMP.List/releases/download/1.1.0.0/HKMP.List.zip"
+        },
+        "Dependencies": {
+          "Dependency": "HKMP"
+        },
+        "Repository": "https://github.com/aristocrat27/HKMP.List",
+        "Integrations": {
+          "Integration": [
+            "HKMP.Rounds",
+            "HKMP.MoreTeams"
+          ]
+        },
+        "Tags": {
+          "Tag": [
+            "Accessibility",
+            "Utility"
+          ]
+        },
+        "Authors": {
+          "Author": "Aristocrat"
+        }
+      },
+      {
+        "Name": "GreenKnight",
+        "DisplayName": "Green Knight",
+        "Description": "A mod which literally just makes the Knight green",
+        "Version": "1.0.255.0",
+        "Link": {
+          "@SHA256": "d2c8879f72128b5e514c03ae9929077a8ad19f6f0627bf4ee953fa2e2d65beee",
+          "#text": "https://github.com/ChadMcOrgans2022/GreenKnight/releases/download/v1.0.255.0/GreenKnight.1.0.255.0.zip"
+        },
+        "Dependencies": null,
+        "Repository": "https://github.com/ChadMcOrgans2022/GreenKnight",
+        "Issues": "https://github.com/ChadMcOrgans2022/GreenKnight/issues",
+        "Tags": {
+          "Tag": [
+            "Gameplay",
+            "Joke"
+          ]
+        },
+        "Authors": {
+          "Author": "MuffinCakes65"
+        }
+      },
+      {
+        "Name": "HKMP.Spectator",
+        "Description": "An HKMP addon that adds a spectator mode, free-cam, player tracking, and integration with HKMP.Rounds.",
+        "Version": "1.0.0.0",
+        "Link": {
+          "@SHA256": "f599994ca2fa5e7c814815b277c722546596da8978701508fd3b7f1a48d65b47",
+          "#text": "https://github.com/aristocrat27/HKMP.Spectator/releases/download/Release/HKMP.Spectator.zip"
+        },
+        "Dependencies": {
+          "Dependency": "HKMP"
+        },
+        "Repository": "https://github.com/aristocrat27/HKMP.Spectator",
+        "Integrations": {
+          "Integration": "HKMP.Rounds"
+        },
+        "Tags": {
+          "Tag": [
+            "Accessibility",
+            "Utility"
+          ]
+        },
+        "Authors": {
+          "Author": "Aristocrat"
+        }
+      },
+      {
+        "Name": "Champion's Shell",
+        "Description": "Adds Champion's Shell, a 1-notch charm found in Dirtmouth that shows enemy health bars. Upgrade it at the Nailsmith with geo and relics to deal bonus nail damage to nearly dead enemies.",
+        "Version": "0.1.0.0",
+        "Link": {
+          "@SHA256": "67250a8705919b00fe9ff682241c7544b1221fbbfd07370bfddd52d85f49d4e6",
+          "#text": "https://github.com/owenqren/Champion-s-Shell/releases/download/v0.1.0/ChampionsShell.zip"
+        },
+        "Dependencies": {
+          "Dependency": "SFCore"
+        },
+        "Repository": "https://github.com/owenqren/Champion-s-Shell",
+        "ReadMe": "https://github.com/owenqren/Champion-s-Shell/raw/refs/heads/main/README.md",
+        "Issues": "https://github.com/owenqren/Champion-s-Shell/issues",
+        "Tags": {
+          "Tag": [
+            "Charm",
+            "LLM-Assisted"
+          ]
+        },
+        "Authors": {
+          "Author": "owenqren"
+        }
+      },
+      {
+        "Name": "GeoShare",
+        "Description": "Allows players to transfer Geo in HKMP lobbies using chat commands.",
+        "Version": "0.9.0.0",
+        "Link": {
+          "@SHA256": "F0D0A36AF2E563EBC2DFD9C5D9C99F9B6D1DE71E8837417E37101F3FC37F8241",
+          "#text": "https://github.com/Euktop/HKMP-GeoShare/releases/download/v0.9.0-beta/GeoShare.zip"
+        },
+        "Dependencies": {
+          "Dependency": "HKMP"
+        },
+        "Repository": "https://github.com/Euktop/HKMP-GeoShare",
+        "Tags": {
+          "Tag": "Gameplay"
+        },
+        "Authors": {
+          "Author": "Euktop"
+        }
+      },
+      {
+        "Name": "QoL.Lite",
+        "DisplayName": "Quality of Life Lite",
+        "Description": "A range of quality of life changes that are valid for Team Hitless no hit runs.",
+        "Version": "1.0.0.0",
+        "Link": {
+          "@SHA256": "86ebc74accc9e6669f19fa27237c6d2ee8f3f1babf8ddcf31926e374038ae0a6",
+          "#text": "https://github.com/kyleanderror13/QoL.Lite/releases/download/v1.0.0/QoL.Lite.zip"
+        },
+        "Dependencies": {
+          "Dependency": "Vasi"
+        },
+        "Repository": "https://github.com/kyleanderror13/QoL.Lite",
+        "ReadMe": "https://github.com/kyleanderror13/QoL.Lite/blob/master/README.md",
+        "Tags": {
+          "Tag": "Utility"
+        },
+        "Authors": {
+          "Author": "kyleanderror13"
+        }
+      },
+      {
+        "Name": "Gaslight",
+        "Description": "FPS and mod load profiler. Shows what eats your FPS: in-game graph, per-mod and per-method timings, lag spikes with the culprit, HTML report. Observer only; interface in English and Russian.",
+        "Version": "1.1.0.0",
+        "Link": {
+          "@SHA256": "f1dc6ed7d6004ab327cf052be55c1c197c7fa406277eb3b93608dbc99e0b5d96",
+          "#text": "https://github.com/Sova-89/Gaslight/releases/download/v1.1.0/Gaslight.zip"
+        },
+        "Dependencies": null,
+        "Repository": "https://github.com/Sova-89/Gaslight",
+        "ReadMe": "https://github.com/Sova-89/Gaslight/raw/refs/heads/main/README.md",
+        "Tags": {
+          "Tag": "Utility"
+        },
+        "Authors": {
+          "Author": "Sova"
+        }
+      },
+      {
+        "Name": "Stumble",
+        "Description": "The Knight is a little clumsy: every so often while running, they trip, fall flat on their face, and have to pick themselves back up. With the Mantis Claw, they sometimes lose their grip on walls too.",
+        "Version": "0.2.0.0",
+        "Link": {
+          "@SHA256": "0d0b8b4523fdd4353bfd449a125775bd843222b3ea08eb422a7945b1dc058b22",
+          "#text": "https://github.com/BShadid/HKStumbleMod/releases/download/v0.2/Stumble.zip"
+        },
+        "Dependencies": null,
+        "Repository": "https://github.com/BShadid/HKStumbleMod",
+        "Tags": {
+          "Tag": [
+            "Gameplay",
+            "LLM-Assisted"
+          ]
+        },
+        "Authors": {
+          "Author": "TCM"
+        }
+      },
+      {
+        "Name": "HKMP.MoreTeams",
+        "Description": "An HKMP addon that adds 8 additional teams and the ability to create custom ones.",
+        "Version": "1.0.0.0",
+        "Link": {
+          "@SHA256": "c7e6b9ecbe7ac80434d4bb0037afca79ca723b9d983efdcc062e213ea8899b19",
+          "#text": "https://github.com/aristocrat27/HKMP.MoreTeams/releases/download/Release/HKMP.MoreTeams.zip"
+        },
+        "Dependencies": {
+          "Dependency": "HKMP"
+        },
+        "Repository": "https://github.com/aristocrat27/HKMP.MoreTeams",
+        "Integrations": {
+          "Integration": "HKMP.List"
+        },
+        "Tags": {
+          "Tag": [
+            "Accessibility",
+            "Utility"
+          ]
+        },
+        "Authors": {
+          "Author": "Aristocrat"
+        }
+      },
+      {
+        "Name": "ParryMod",
+        "Description": "Sekiro-inspired parry with hand-drawn animations, custom sounds and boss reactions. Adds Shinobi's Charm.",
+        "Version": "1.0.0.0",
+        "Link": {
+          "@SHA256": "ee6971917f039f7faa9546c3e104383a86adafa12fd98248cf1c69fb0f011a37",
+          "#text": "https://github.com/Lewixen/Parry-and-Back-Dash-Mods/releases/download/v1.0.0.0/ParryMod.zip"
+        },
+        "Dependencies": {
+          "Dependency": "SFCore"
+        },
+        "Repository": "https://github.com/Lewixen/Parry-and-Back-Dash-Mods",
+        "Issues": "https://github.com/Lewixen/Parry-and-Back-Dash-Mods/issues",
+        "Tags": {
+          "Tag": [
+            "Gameplay",
+            "LLM-Assisted"
+          ]
+        },
+        "Authors": {
+          "Author": "Lewixen"
+        }
+      },
+      {
+        "Name": "Back Dash",
+        "Description": "Brings back the cut beta back dash: dash backwards without turning around, also as a shadow dash.",
+        "Version": "1.0.0.0",
+        "Link": {
+          "@SHA256": "e74357e8c479aade91ae248825b69ae0ec4359337f58c43a86ddbe1ff80f36ef",
+          "#text": "https://github.com/Lewixen/Parry-and-Back-Dash-Mods/releases/download/v1.0.0.0/BackDash.zip"
+        },
+        "Dependencies": null,
+        "Repository": "https://github.com/Lewixen/Parry-and-Back-Dash-Mods/blob/main/BACKDASH.md",
+        "Issues": "https://github.com/Lewixen/Parry-and-Back-Dash-Mods/issues",
+        "Tags": {
+          "Tag": [
+            "Gameplay",
+            "LLM-Assisted"
+          ]
+        },
+        "Authors": {
+          "Author": "Lewixen"
+        }
+      },
+      {
+        "Name": "CreatureSpawner",
+        "DisplayName": "Creature Spawner",
+        "Description": "Spawn any creature or boss anywhere with a hotkey (Ctrl by default; changeable in Mods > Creature Spawner).",
+        "Version": "1.0.0.0",
+        "Link": {
+          "@SHA256": "a06ef4d10bb49efd769181e7f8d1a81da5c5a622641ca656622dbcb9cfc42b7f",
+          "#text": "https://github.com/rennpas/CreatureSpawner/releases/download/v1.0.0/CreatureSpawner.zip"
+        },
+        "Dependencies": null,
+        "Repository": "https://github.com/rennpas/CreatureSpawner",
+        "ReadMe": "https://github.com/rennpas/CreatureSpawner/raw/refs/heads/main/ReadMe.md",
+        "Issues": "https://github.com/rennpas/CreatureSpawner/issues",
+        "Tags": {
+          "Tag": [
+            "Boss",
+            "Utility",
+            "LLM-Assisted"
+          ]
+        },
+        "Authors": {
+          "Author": "rennpas"
         }
       }
     ]

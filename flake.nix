@@ -24,6 +24,9 @@
         permittedInsecurePackages = [ "python3.12-ecdsa-0.19.1" ];
         allowUnfree = true;
       };
+      overlays = [(final: prev: {
+        gtk2 = nixpkgs.legacyPackages.x86_64-linux.callPackage ./upstream/gtk2 {};
+      })];
     };
     lib = import ./lib/default.nix { inherit pkgs; };
     fetch-hk = import ./packages/hollow-knight/fetch.nix { inherit pkgs; };
